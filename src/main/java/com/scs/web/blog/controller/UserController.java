@@ -29,7 +29,7 @@ import java.util.Map;
  **/
 @WebServlet(urlPatterns = "/sign-in")
 public class UserController extends HttpServlet {
-    private static Logger logger = (Logger) LoggerFactory.getLogger(UserController.class);
+    private static Logger logger = LoggerFactory.getLogger(UserController.class);
     private UserService userService = ServiceFactory.getUserServiceInstance();
 
     @Override

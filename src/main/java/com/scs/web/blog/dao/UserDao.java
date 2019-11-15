@@ -1,24 +1,17 @@
 package com.scs.web.blog.dao;
 
 import com.scs.web.blog.entity.User;
-import lombok.Data;
 
 import java.sql.SQLException;
 import java.util.List;
 
 
 public interface UserDao {
-    /**
-     * 新增用户
-     * @param  user
-     * @return int[]
-     * @throws SQLException
-     */
-    int insert(User user) throws SQLException;
+
 
 
     /**
-     * 批量新增学生
+     * 批量新增用户
      * @param userList
      * @return int[]
      * @throws SQLException
@@ -33,4 +26,12 @@ public interface UserDao {
      * @throws SQLException
      */
     User findUserByMobile(String mobile) throws SQLException;
+
+//    /**
+//     * 用户登录账号
+//     * @param user
+//     * @return user
+//     * @throws SQLException
+//     */
+//    User sign (User user) throws  SQLException;
 }

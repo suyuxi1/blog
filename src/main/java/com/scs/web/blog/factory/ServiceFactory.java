@@ -1,7 +1,9 @@
 package com.scs.web.blog.factory;
 
+import com.scs.web.blog.service.ArticleService;
 import com.scs.web.blog.service.StudentService;
 import com.scs.web.blog.service.UserService;
+import com.scs.web.blog.service.impl.ArticleServiceImpl;
 import com.scs.web.blog.service.impl.StudentServiceImpl;
 import com.scs.web.blog.service.impl.UserServiceImpl;
 
@@ -19,5 +21,10 @@ public class ServiceFactory {
 
     public static UserService getUserServiceInstance(){
         return (UserService) new UserServiceImpl();
+    }
+
+    public static ArticleService getArticleServiceInstance(){
+        return new ArticleServiceImpl();
+
     }
 }

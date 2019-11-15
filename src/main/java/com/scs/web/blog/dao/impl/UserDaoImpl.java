@@ -21,13 +21,15 @@ import java.util.List;
  **/
 public class UserDaoImpl implements UserDao {
 
-
-    @Override
-    public int insert(User user) throws SQLException {
-
-        return 0;
-    }
-
+//    @Override
+//    public User sign(User user) throws SQLException {
+//        Connection connection = DbUtil.getConnection();
+//        connection.setAutoCommit(false);
+//        String sql = "SELECT * FROM t_user WHERE mobile = ? and password = ?";
+//        PreparedStatement pstmt = connection.prepareStatement(sql);
+//
+//        return null;
+//    }
     @Override
     public int[] batckInsert(List<User> userList) throws SQLException {
         Connection connection = DbUtil.getConnection();
@@ -85,4 +87,6 @@ public class UserDaoImpl implements UserDao {
         }
         return user;
     }
+
+
 }

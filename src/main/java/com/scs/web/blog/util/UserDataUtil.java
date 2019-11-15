@@ -53,6 +53,11 @@ public class UserDataUtil {
         int bound = random.nextInt(8888);
         return now.minusDays(bound);
     }
+    public static int getUserID(){
+        Random random = new Random();
+        int userID = random.nextInt(100);
+        return userID;
+    }
 
     public static void main(String[] args) {
         for (int i = 0;i<10;i++){

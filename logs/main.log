@@ -1,3 +1,3 @@
-2019-11-09.18:35:27 INFO  [main] com.scs.web.blog.dao.UserDaoTest.batckInsert:24  成功新增72个用户
-2019-11-09.18:41:28 INFO  [main] com.scs.web.blog.dao.UserDaoTest.batckInsert:24  成功新增72个用户
-2019-11-09.18:43:44 INFO  [main] com.scs.web.blog.dao.UserDaoTest.batckInsert:24  成功新增72个用户
+2019-11-14.20:52:21 ERROR [main] com.scs.web.blog.dao.ArticleDao.batckInsert:26  批量新增文章异常
+2019-11-14.20:52:32 ERROR [main] com.scs.web.blog.dao.ArticleDao.findAll:41  查询数据库数据异常
+2019-11-14.20:53:42 ERROR [main] com.scs.web.blog.dao.ArticleDao.findAll:41  查询数据库数据异常

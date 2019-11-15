@@ -1,8 +1,10 @@
 package com.scs.web.blog.util;
 
 
+import com.scs.web.blog.entity.Article;
 import com.scs.web.blog.entity.Student;
 import com.scs.web.blog.entity.User;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -11,9 +13,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+
+
 
 /**
  * @author suyuxi
@@ -87,5 +92,48 @@ public class JSoupSpider {
         }
         return userList;
     }
+    public static List<Article> getArticles(){
+        Document document = null;
+        List<Article> articleList = new ArrayList<>();
+        for (int i = 0; i<=10; i++){
+            try{
+                document = Jsoup.connect("https://book.douban.com/review/best/?start=" + 2*i*10).get();
+            }catch (IOException e){
+                logger.error("连接失败");
+            }
+            Elements divs = document.getElementsByClass("main review-item");
+            divs.forEach(div->{
+                Article article = new Article();
+                article.setUserID((long) UserDataUtil.getUserID());
+                article.setPicture(div.child(0).child(0).attr("src"));
+                article.setAvatar(div.child(0).child(0).attr("src"));
+                article.setAuthor(div.child(1).child(1).text());
+                article.setCreate_time(Timestamp.valueOf(div.child(1).children().last().text()).toLocalDateTime());
+                article.setTitle(div.child(2).child(0).text());
+                article.setContent(div.child(2).child(1).child(0).text());
+                article.setLikes(div.child(2).child(3).child(0).child(1).text());
+                article.setNoLikes(div.child(2).child(3).child(1).text());
+                article.setReply(div.child(2).child(3).child(2).text());
+                articleList.add(article);
+
+            });
+        }
+        return articleList;
+
+    }
+
+
+    public static void main(String[] args) throws Exception {
+
+        Document document = Jsoup.connect("https://www.jianshu.com/c/87b50a03a96e?order_by=top&count=50&page=1").get();
+        Elements card = document.getElementsByClass("have-img");
+        System.out.println(card.size());
+        card.forEach(div-> {
+            System.out.println(card.text());
+
+
+
+        });
+        }
 
 }

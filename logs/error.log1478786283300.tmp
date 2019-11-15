@@ -1,0 +1,8 @@
+2019-11-12.20:24:24 ERROR [main] com.scs.web.blog.util.DbUtil.getConnection:64  2019-11-12T20:24:24.204069300数据库连接失败
+2019-11-12.20:24:59 ERROR [main] com.scs.web.blog.util.DbUtil.getConnection:64  2019-11-12T20:24:59.122192200数据库连接失败
+2019-11-12.20:49:45 ERROR [main] com.scs.web.blog.util.DbUtil.getConnection:64  2019-11-12T20:49:45.191219900数据库连接失败
+2019-11-12.20:51:16 ERROR [main] com.scs.web.blog.util.DbUtil.getConnection:64  2019-11-12T20:51:16.975744800数据库连接失败
+2019-11-12.20:52:00 ERROR [main] com.scs.web.blog.util.JSoupSpider.getArticles:100  连接失败
+2019-11-12.20:52:34 ERROR [main] com.scs.web.blog.util.JSoupSpider.getArticles:100  连接失败
+2019-11-12.20:54:36 ERROR [main] com.scs.web.blog.util.DbUtil.getConnection:64  2019-11-12T20:54:36.796974300数据库连接失败
+2019-11-12.20:55:35 ERROR [main] com.scs.web.blog.util.DbUtil.getConnection:64  2019-11-12T20:55:35.209181400数据库连接失败

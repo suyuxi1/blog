@@ -1,0 +1,2 @@
+2019-11-14.14:34:02 ERROR [main] com.scs.web.blog.dao.ArticleDao.batckInsert:26  批量新增文章异常
+2019-11-14.14:36:48 ERROR [main] com.scs.web.blog.dao.ArticleDao.batckInsert:26  批量新增文章异常

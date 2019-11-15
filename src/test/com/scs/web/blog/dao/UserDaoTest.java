@@ -1,6 +1,7 @@
 package com.scs.web.blog.dao;
 
 
+
 import com.scs.web.blog.factory.DaoFactory;
 import com.scs.web.blog.util.JSoupSpider;
 import org.junit.Test;
@@ -27,6 +28,6 @@ public class UserDaoTest {
             logger.error("批量新增用户异常");
         }
 
-
     }
+
 }
