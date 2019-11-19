@@ -2,6 +2,7 @@ package com.scs.web.blog.dao;
 
 
 
+import com.scs.web.blog.entity.User;
 import com.scs.web.blog.factory.DaoFactory;
 import com.scs.web.blog.util.JSoupSpider;
 import org.junit.Test;
@@ -10,7 +11,8 @@ import org.slf4j.LoggerFactory;
 
 
 import java.sql.SQLException;
-
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 
 public class UserDaoTest {
@@ -29,5 +31,6 @@ public class UserDaoTest {
         }
 
     }
+
 
 }

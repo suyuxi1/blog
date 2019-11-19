@@ -1,3 +1,2 @@
-2019-11-14.20:52:21 ERROR [main] com.scs.web.blog.dao.ArticleDao.batckInsert:26  批量新增文章异常
-2019-11-14.20:52:32 ERROR [main] com.scs.web.blog.dao.ArticleDao.findAll:41  查询数据库数据异常
-2019-11-14.20:53:42 ERROR [main] com.scs.web.blog.dao.ArticleDao.findAll:41  查询数据库数据异常
+2019-11-17.19:38:52 ERROR [main] com.scs.web.blog.service.impl.UserServiceImpl.insertIn:65  注册成功
+2019-11-17.19:50:07 ERROR [main] com.scs.web.blog.service.impl.UserServiceImpl.insertIn:65  注册成功

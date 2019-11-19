@@ -20,7 +20,7 @@ public class ArticleDaoImpl implements ArticleDao {
     public int[] batckInsert(List<Article> AticleList) throws SQLException {
         Connection connection = DbUtil.getConnection();
         connection.setAutoCommit(false);
-        String sql = "INSERT INTO t_douban (user_id,picture,avatar,author,create_time,title,content,likes,noLikes,reply) VALUES (?,?,?,?,?,?,?,?,?,?) ";
+        String sql = "INSERT INTO t_article (user_id,picture,avatar,author,create_time,title,content,likes,noLikes,reply,introduction) VALUES (?,?,?,?,?,?,?,?,?,?,?) ";
         PreparedStatement pstmt = connection.prepareStatement(sql);
         AticleList.forEach(article -> {
             try {
@@ -34,6 +34,7 @@ public class ArticleDaoImpl implements ArticleDao {
                 pstmt.setString(8, article.getLikes());
                 pstmt.setString(9, article.getNoLikes());
                 pstmt.setString(10, article.getReply());
+                pstmt.setString(11, article.getIntroduction());
                 pstmt.addBatch();
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -51,7 +52,7 @@ public class ArticleDaoImpl implements ArticleDao {
         List<Article> articleList = new ArrayList<>();
         Connection connection = DbUtil.getConnection();
         connection.setAutoCommit(false);
-        String sql = "SELECT * FROM t_douban ORDER BY id DESC " ;
+        String sql = "SELECT * FROM t_article" ;
         Statement stmt = connection.createStatement();
         ResultSet rs = stmt.executeQuery(sql);
         while(rs.next()){
@@ -67,12 +68,13 @@ public class ArticleDaoImpl implements ArticleDao {
             article.setLikes(rs.getString("likes"));
             article.setNoLikes(rs.getString("noLikes"));
             article.setReply(rs.getString("reply"));
+            article.setIntroduction(rs.getString("introduction"));
             articleList.add(article);
 
         }
-        connection.commit();
-        stmt.close();
-        connection.close();
+//        connection.commit();
+//        stmt.close();
+//        connection.close();
         return articleList;
     }
 

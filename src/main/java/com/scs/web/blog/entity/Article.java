@@ -24,6 +24,7 @@ public class Article {
     private String likes;
     private String noLikes;
     private String reply;
+    private String introduction;
 
 
 }

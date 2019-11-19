@@ -27,7 +27,7 @@ import java.util.List;
  * @Date 2019/11/12
  * @Version 1.0
  **/
-@WebServlet(urlPatterns = {"/article"})
+@WebServlet(urlPatterns = {"/api/article"})
 public class ArticleController extends HttpServlet {
     private static Logger logger = LoggerFactory.getLogger(UserController.class);
     private ArticleService articleService = ServiceFactory.getArticleServiceInstance();
@@ -37,8 +37,9 @@ public class ArticleController extends HttpServlet {
         List<Article> articleList = null;
         try{
             articleList = DaoFactory.getArticleDaoInstance().findAll();
+            System.out.println(articleList.size());
         }catch (SQLException e){
-            System.out.println("查询用户出现异常");
+            logger.error("查询用户出现异常");
         }
         int code = resp.getStatus();
         resp.setHeader("Access-Control-Allow-Origin", "*");
