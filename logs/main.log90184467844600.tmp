@@ -1,0 +1,6 @@
+2019-11-16.20:41:44 ERROR [main] com.scs.web.blog.dao.ArticleDao.findAll:41  查询数据库数据异常
+2019-11-16.20:47:49 ERROR [main] com.scs.web.blog.dao.ArticleDao.batckInsert:26  批量新增文章异常
+2019-11-16.20:54:16 ERROR [main] com.scs.web.blog.dao.ArticleDao.batckInsert:26  批量新增文章异常
+2019-11-16.20:55:59 ERROR [main] com.scs.web.blog.dao.ArticleDao.batckInsert:26  批量新增文章异常
+2019-11-16.20:57:14 INFO  [main] com.scs.web.blog.dao.ArticleDao.batckInsert:23  成功新添60篇文章
+2019-11-16.20:57:49 INFO  [main] com.scs.web.blog.dao.ArticleDao.batckInsert:23  成功新添99篇文章

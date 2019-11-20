@@ -1,13 +1,13 @@
 package com.scs.web.blog.dao.impl;
 
 
-import com.mysql.jdbc.Statement;
+
 import com.scs.web.blog.dao.UserDao;
 import com.scs.web.blog.domain.UserDto;
 import com.scs.web.blog.entity.User;
 
 import com.scs.web.blog.util.DbUtil;
-import com.scs.web.blog.util.UserDataUtil;
+
 import org.apache.commons.codec.digest.DigestUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -98,7 +98,9 @@ public class UserDaoImpl implements UserDao {
             user.setNickname(rs.getString("nickname"));
             user.setAvatar(rs.getString("avatar"));
             user.setGender(rs.getString("gender"));
-            user.setBirthday(rs.getDate("birthday").toLocalDate());
+            if(rs.getDate("birthday") != null){
+                user.setBirthday(rs.getDate("birthday").toLocalDate());
+            }
             user.setIntroduction(rs.getString("introduction"));
             user.setAddress(rs.getString("address"));
             user.setFollows(rs.getShort("fans"));

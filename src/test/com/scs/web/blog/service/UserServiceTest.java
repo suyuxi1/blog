@@ -24,9 +24,10 @@ public class UserServiceTest {
 
     @Test
     public void insertIn() throws SQLException {
-        Map<String, Object> map = new HashMap<>();
-        UserDto userDto = new UserDto("13333333333","11111111");
+        Map<String, Object> map;
+        UserDto userDto = new UserDto("13333331111","11111111");
         map = userService.insertIn(userDto);
         System.out.println(map.get("msg"));
+        System.out.println(map.get("data"));
     }
 }

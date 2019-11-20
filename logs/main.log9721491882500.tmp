@@ -1,0 +1,6 @@
+2019-11-17.17:03:37 ERROR [main] com.scs.web.blog.util.JSoupSpider.getArticles:101  连接失败
+2019-11-17.17:04:19 ERROR [main] com.scs.web.blog.dao.ArticleDao.batckInsert:26  批量新增文章异常
+2019-11-17.17:07:48 ERROR [main] com.scs.web.blog.dao.ArticleDao.batckInsert:26  批量新增文章异常
+2019-11-17.17:15:51 ERROR [main] com.scs.web.blog.dao.ArticleDao.batckInsert:26  批量新增文章异常
+2019-11-17.17:22:06 ERROR [main] com.scs.web.blog.dao.ArticleDao.batckInsert:26  批量新增文章异常
+2019-11-17.17:27:49 INFO  [main] com.scs.web.blog.dao.ArticleDao.batckInsert:23  成功新添99篇文章
