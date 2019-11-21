@@ -7,41 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40c2dcf7-8dc1-45c6-8324-9c7ccd474b2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/logs/error.2019-11-14-20.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error.2019-11-16-20.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error.2019-11-17-17.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error.log22077432148200.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/error.log9721494797300.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/main.2019-11-14-20.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/main.2019-11-16-20.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/main.2019-11-17-15.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/main.2019-11-17-17.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/main.2019-11-17-19.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/main.2019-11-17-23.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/main.log11992211077900.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/main.log22077417174800.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/main.log23719357337900.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/main.log90184467844600.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/main.log9721491882500.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/controller/CodeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/verify/ImageUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/address.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/controller/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/listener/MySessionContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/listener/SessionListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/upload.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/main.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/controller/CodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/controller/CodeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/util/UserDataUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/util/UserDataUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/scs/web/blog/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/scs/web/blog/dao/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/scs/web/blog/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/scs/web/blog/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/blog.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/dao/impl/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/controller/CodeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/controller/CodeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/util/UserDataUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/util/UserDataUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/dao/impl/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/controller/CodeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/controller/CodeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/util/UserDataUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/util/UserDataUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/scs/web/blog/dao/UserDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/scs/web/blog/dao/UserDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/scs/web/blog/service/UserServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/scs/web/blog/service/UserServiceTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +50,8 @@
         <option value="Arquillian JUnit Test Class" />
         <option value="JUnit4 Test Class" />
         <option value="Interface" />
+        <option value="jsf" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -112,7 +95,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.6449511" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
@@ -121,6 +104,9 @@
       <recent name="com.scs.web.blog.dao" />
       <recent name="com.scs.web.blog.dao.impl" />
       <recent name="com.scs.web.blog.factory" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEA\IntelliJ IDEA 2019.2.1\java web\blog\src\main\java\com\scs\web\blog\listener" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -143,7 +129,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ImageUtil">
+  <component name="RunManager" selected="Tomcat Server.blog">
     <configuration name="ImageUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.scs.web.blog.verify.ImageUtil" />
       <module name="blog" />
@@ -292,17 +278,17 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.UserDataUtil" />
+      <item itemvalue="Application.ImageUtil" />
       <item itemvalue="JUnit.UserServiceTest.insertIn" />
       <item itemvalue="JUnit.UserServiceTest.signIn" />
       <item itemvalue="JUnit.UserDaoTest.batckInsert" />
       <item itemvalue="Tomcat Server.blog" />
-      <item itemvalue="Application.UserDataUtil" />
-      <item itemvalue="Application.ImageUtil" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ImageUtil" />
         <item itemvalue="Application.UserDataUtil" />
+        <item itemvalue="Application.ImageUtil" />
         <item itemvalue="JUnit.UserDaoTest.batckInsert" />
         <item itemvalue="JUnit.UserServiceTest.insertIn" />
         <item itemvalue="JUnit.UserServiceTest.signIn" />
@@ -359,7 +345,11 @@
       <workItem from="1574150725274" duration="2295000" />
       <workItem from="1574153158038" duration="1482000" />
       <workItem from="1574154782810" duration="2557000" />
-      <workItem from="1574215353188" duration="13330000" />
+      <workItem from="1574215353188" duration="13495000" />
+      <workItem from="1574294319881" duration="5190000" />
+      <workItem from="1574300845465" duration="3959000" />
+      <workItem from="1574304861391" duration="14493000" />
+      <workItem from="1574329357830" duration="10567000" />
     </task>
     <task id="LOCAL-00001" summary="登录接口测试提交">
       <created>1573301718602</created>
@@ -382,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574139886518</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="后端第四次提交">
+      <created>1574259571429</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1574259571429</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,6 +402,7 @@
     <MESSAGE value="登录接口测试提交" />
     <MESSAGE value="登录接口测试第二次提交" />
     <MESSAGE value="后端第三次提交，增加查看文章功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="后端第三次提交，增加查看文章功能" />
+    <MESSAGE value="后端第四次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="后端第四次提交" />
   </component>
 </project>
