@@ -1,4 +1,4 @@
-package com.scs.web.blog.domain;
+package com.scs.web.blog.domain.dto;
 
 import lombok.Data;
 

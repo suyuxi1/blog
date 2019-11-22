@@ -32,24 +32,24 @@ public class ArticleController extends HttpServlet {
     private static Logger logger = LoggerFactory.getLogger(UserController.class);
     private ArticleService articleService = ServiceFactory.getArticleServiceInstance();
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp)throws ServletException, IOException{
-        List<Article> articleList = null;
-        try{
-            articleList = DaoFactory.getArticleDaoInstance().findAll();
-            System.out.println(articleList.size());
-        }catch (SQLException e){
-            logger.error("查询用户出现异常");
-        }
-        int code = resp.getStatus();
-        resp.setHeader("Access-Control-Allow-Origin", "*");
-        String msg = code == 200? "成功" : "失败";
-        ResponseObject ro = ResponseObject.success(code,msg,articleList);
-        resp.setContentType("application/json;charset=utf-8");
-        PrintWriter out = resp.getWriter();
-        Gson gson = new GsonBuilder().create();
-        out.print(gson.toJson(ro));
-        out.close();
-    }
+//    @Override
+//    protected void doGet(HttpServletRequest req, HttpServletResponse resp)throws ServletException, IOException{
+//        List<Article> articleList = null;
+//        try{
+//            articleList = DaoFactory.getArticleDaoInstance().findAll();
+//            System.out.println(articleList.size());
+//        }catch (SQLException e){
+//            logger.error("查询用户出现异常");
+//        }
+//        int code = resp.getStatus();
+//        resp.setHeader("Access-Control-Allow-Origin", "*");
+//        String msg = code == 200? "成功" : "失败";
+//        ResponseObject ro = ResponseObject.success(code,msg,articleList);
+//        resp.setContentType("application/json;charset=utf-8");
+//        PrintWriter out = resp.getWriter();
+//        Gson gson = new GsonBuilder().create();
+//        out.print(gson.toJson(ro));
+//        out.close();
+//    }
 
 }

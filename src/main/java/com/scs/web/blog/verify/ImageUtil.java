@@ -1,8 +1,6 @@
 package com.scs.web.blog.verify;
 
-import com.scs.web.blog.util.DbUtil;
-import com.scs.web.blog.util.UserDataUtil;
-import org.jsoup.internal.StringUtil;
+import com.scs.web.blog.util.DataUtil;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -35,7 +33,7 @@ public class ImageUtil {
     }
 
     public static void main(String[] args) throws IOException {
-        String code = UserDataUtil.getNumberCode();
+        String code = DataUtil.getNumberCode();
         BufferedImage img = ImageUtil.getImage(code,200, 100);
         File file = new File("E:/2019/T.jpg");
         ImageIO.write(img, "jpg", file);

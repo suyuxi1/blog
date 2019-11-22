@@ -1,0 +1,482 @@
+SDR Creating Date/Time 9/14/2018 7:44:49 AM UTC
+Order Production Level: Production
+HW snum 1000 - - NOT_SI
+HW lang CN CN
+HW destination CN
+SW odm_package IMAGEGROUP01 WT4 CHS OSVERSION01
+SW odm_image_name btoapp64120_09A001.img
+[SDR2SrvXlate-Fake-Audit] BP WT4 0/6RR74
+[SDR2SrvXlate-Fake-Audit] BP WINDOWSOS 0/6RR74
+[SDR2SrvXlate-Fake-Audit] BP TITAN 0/6RR74
+[SDR2SrvXlate-Fake-Audit] BP RCVRYIMG 0/0WJWR 0/W171T
+[SDR2SrvXlate-Fake-Audit] BP OSL-CHS 0/6RR74
+[SDR2SrvXlate-Fake-Audit] BP MCAFEE 0/FD09N
+[SDR2SrvXlate-Fake-Audit] BP FIST 0/57154
+[SDR2SrvXlate-Fake-Audit] BP 64BIT 0/6RR74
+BP WT4 0/6RR74
+BP WINDOWSOS 0/6RR74
+BP TITAN 0/6RR74
+BP RCVRYIMG 0/0WJWR 0/W171T
+BP OSL-CHS 0/6RR74
+BP MCAFEE 0/FD09N
+BP FIST 0/57154
+BP 64BIT 0/6RR74
+rem titan DISKPREP 
+SI sw  6RR74 SRV,OS,WIN10,64,SCHI
+rem titan PREPUP 
+rem titan EBTS 
+SI sw  GYTDF SRV,SW,WIN10,RDX
+SI sw  9MK2C SRV,REMOVE,CHINA,CTA
+SI sw  NJCM4 SRV,SW,G-SERISE,RE-BRANDING
+SI sw  T2673 SRV,OS,OCA-MARKER
+SI sw  RDX5C SRV,W10,INTEL,PPM
+SI sw  07HF9 SRV,DRVR,ESTR,XLOB
+SI sw  WXM2C SRV,BIOS RECOVERY 2
+SI sw  334CH SRV,SW,APP,SACLIENT
+SI sw  0PW7F SRV,DRVR,SGX
+SI sw  WVY6M SRV,DRVR,CHIPSET,DSD,LOKI G
+SI sw  0800G SRV,DRVR,INTL HD GX,LOKI G
+SI sw  1KP81 SRV,DRVR,NVIDIA GTX1050,LOKI G
+SI sw  M1NTW SRV,DRVR,RTK AUD,LOKI INTEL
+SI sw  PN7TC SRV,DRVR,CHIPSET,EVTFLTR,LOKIG
+SI sw  XVNJD SRV,DRVR,RTK,USB,LOKI G
+SI sw  1JCHY SRV,DRVR,SERIAL,IO,LOKI G
+SI sw  CK6DX SRV,DRVR,INTL,MEI,LOKI G
+SI sw  H4JJ6 SRV,DRVR,DPTF,LOKI G
+SI sw  2D65P SRV,DRVR,PCIE CTL,LOKI G
+SI sw  YFMPG SRV,DRVR,SERIAL ATA,LOKI G
+SI sw  KHGT0 SRV,DRVR,WIFI,9560/9462,LOKI G
+SI sw  MDCY1 SRV,DRVR,BT,LOKI G
+SI sw  YWWPT SRV,DRVR,APP,AUDIO,35/779
+SI sw  244CP SRV,WALLPAPER,G3,RED-LOGO
+SI sw  4M7PR SRV,DRVR,NV GTX 1050,W32,LOKIG
+rem titan BASE10 
+SI sw  YR2T2 SRV,SW,CRRS,MUI
+SI sw  7VDFT SRV,SW,OTB,SURV
+SI sw  W171T SRV,SW,DDRE,CSMB
+SI sw  FD09N SRV,SW,MCAFE,CB,LIVESAFE,WIN10
+SI sw  0WJWR SRV,SW,EXCAL-SOS/DDRE,BASE
+SI sw  6CVXH SRV,SW,EXCAL,WIN-CMPNT
+SI sw  5NM85 SRV,SW,OFC2016,OPK
+SI sw  8JGDK SRV,SW,APP,SMARTBYTE
+SI sw  PMGWT SRV,SW,DMC
+SI sw  XF88N SRV,SW,NDGN,CWDR,CHI
+SI sw  PT0YN SRV,SW,MS,XLTR,W10
+SI sw  2PGXF SRV,SW,DPM
+SI sw  7M1KY SRV,SW,OFC2016,OPK
+SI sw  00VV1 SRV,SW,MS,LINKEDIN
+SI sw  15V18 SRV,SW,DELL-UPDATE,UWP
+SI sw  4H7K9 SRV,SW,MY DELL
+SI sw  7CVVR SRV,SW,APP,SACLIENT,W10S
+SI sw  M8192 SRV,SW,MCAF-SCTY,UPDATES
+SI sw  0RR64 SRV,SW,JUMPSTART,W10
+SI sw  NGC17 SRV,WINDOWS,REG,PWR
+SI sw  57154 SRV,SW,FIST
+[SDR2SrvXlate-Fake-Audit] SI sw  58R15 SRV,SW,DELL-UPDATE
+HW lcd FHD TFT 15.6
+HW model 3579 YBXV_T_15 NOTEBOOK NOTEBOOK
+INFO W21JJ INFO,GNRC,OEM,TRACKING,PN
+INFO XNHVP INFO,SWSI,LCD,15.6,NON-TCH
+INFO 7K4MH INFO,C DRIVE,MSSD
+INFO 864KE INFO,PLACEHOLDER,PIECE-PART
+INFO P637H INFO,RETAIL
+INFO 4XFT2 INFO,DIRSHP,CMPL,CHENGDU
+INFO 00159 INFO,1ST BOOT,HARD DRIVE
+INFO 00160 INFO,ADD BOOT HARD DRIVE
+INFO W21JJ INFO,GNRC,OEM,TRACKING,PN
+INFO 9XP3W INFO,LBL,DEO,ESTAR
+INFO W21JJ INFO,GNRC,OEM,TRACKING,PN
+INFO W21JJ INFO,GNRC,OEM,TRACKING,PN
+INFO HR8X9 INFO,WINRE-ADDR,3,GB-PTN
+INFO D6KX0 INFO,WINDOWS,10
+INFO X7V4Y INFO,RYLTY,W10,DOLBY5.1,CODEC
+INFO HMX3H INFO,WIN10,EM
+INFO 0616F INFO,BOOT,GPT,OVERRIDE
+INFO D6KX0 INFO,WINDOWS,10
+INFO HNX8N INFO,IE@V,110000
+INFO KYWGW INFO,.NET@V,46000
+INFO PJ289 INFO,VPEPR
+INFO PY79K INFO,.NET@V,50000
+INFO TM318 INFO,SLP2,ENABLE,WINDOWS
+INFO X0601 INFO,BYPS,UPTN
+INFO XP9T9 INFO,BOOT,CNTNR,GPT
+INFO 58548 INFO,SW,UTILITY-PARTITION,10MB
+INFO 79DRF INFO,RYLTY,RIVET,SMARTBYTE,5K
+INFO 83F5D INFO,IRST,META-PTN,5M
+INFO 8564U INFO,SW,DEFAULT,NTFS
+INFO DF3MX INFO,64-BIT,UEFI-MFG,PROCESS
+INFO M3C3H INFO,RYLTY,WAVES-MAXX,AUD,PRO
+INFO NU242 INFO,WINRE-SIZE,15,GB-PTN
+INFO XPRGW INFO,UEFI-CL3
+INFO CRJV6 INFO,WINRE-ADDR,12,GB-PTN
+INFO H8N0H INFO,RYLTY,SCREENOVATE,DMC,CHN
+INFO 83VMP INFO,.NET@V,47000
+INFO K53RM INFO,RYLTY,SACLIENT
+INFO C2N45 INFO,SW,CRRS,UPDATE
+INFO GVXWF INFO,SW,COMMONBUILD,30DAY
+INFO 2KCVH INFO,SW,COMBUILD,15M,EMARKET
+INFO DC9DY INFO,SWSI,NB,STD,INS,3579
+INFO M8N2Y INFO,TRACKER FOR SPP PROGRAM
+INFO W21JJ INFO,GNRC,OEM,TRACKING,PN
+<!-- below is a copy of GCF file -->
+<?xml version="1.0" encoding="UTF-8"?>
+<GCF>
+  <DATACONTAINERS>
+    <CONTAINER name="systemheader" type="xml" version="1.0.0.23">
+            <HEADERATTRIBUTES>
+                <ATTRIBUTE name="lang" value="CN"/>
+                <ATTRIBUTE name="destination" value="CN"/>
+                <ATTRIBUTE name="siaccount" value=""/>
+                <ATTRIBUTE name="model" value="3579"/>
+                <ATTRIBUTE name="family" value="YBXV_T_15"/>
+                <ATTRIBUTE name="chassis" value="NOTEBOOK"/>
+                <ATTRIBUTE name="lob" value="NOTEBOOK"/>
+            </HEADERATTRIBUTES>
+        </CONTAINER>
+    <CONTAINER name="memoryconfiguration" type="xml" version="1.0.0.23">
+            <DIMMS>
+                <DIMM>
+                    <ATTRIBUTE key="index" value="0"/>
+                    <ATTRIBUTE key="partNumber" value="HYXPX"/>
+                    <ATTRIBUTE key="riser" value=""/>
+                    <ATTRIBUTE key="riserslot" value=""/>
+                    <ATTRIBUTE key="error_handling" value="NONE"/>
+                    <ATTRIBUTE key="memory_rank" value="DR"/>
+                    <ATTRIBUTE key="memory_type" value="SDRAM"/>
+                    <ATTRIBUTE key="memory_width" value="8"/>
+                    <ATTRIBUTE key="package_type" value="DIMM"/>
+                    <ATTRIBUTE key="size(MB)" value="8192"/>
+                    <ATTRIBUTE key="speed(MHz)" value="2666"/>
+                    <ATTRIBUTE key="sdrType" value="system_memory_module"/>
+                </DIMM>
+            </DIMMS>
+        </CONTAINER>
+    <CONTAINER name="driveconfiguration" type="xml" version="1.0.0.23">
+            <CONTROLLERS>
+                <CONTROLLER boot_controller="yes" controller_token="SERIAL_4CH" partNumber="">
+                    <DRIVES>
+                        <DRIVE>
+                            <ATTRIBUTE key="boot_drive" value="yes"/>
+                            <ATTRIBUTE key="partNumber" value="6HG72"/>
+                            <ATTRIBUTE key="driveChannelId" value="0:0"/>
+                            <ATTRIBUTE key="capacity(MB)" value="128000"/>
+                            <ATTRIBUTE key="interface" value="SERIAL"/>
+                            <ATTRIBUTE key="sdrType" value="hard_drive(m2_ssd)"/>
+                        </DRIVE>
+                        <DRIVE>
+                            <ATTRIBUTE key="boot_drive" value="no"/>
+                            <ATTRIBUTE key="partNumber" value="2J7C1"/>
+                            <ATTRIBUTE key="driveChannelId" value="0:1"/>
+                            <ATTRIBUTE key="capacity(MB)" value="1000000"/>
+                            <ATTRIBUTE key="encryption_enabled" value="NO"/>
+                            <ATTRIBUTE key="interface" value="SERIAL"/>
+                            <ATTRIBUTE key="spindle_speed(RPM)" value="5400"/>
+                            <ATTRIBUTE key="sdrType" value="hard_drive"/>
+                        </DRIVE>
+                    </DRIVES>
+                    <RAID_CONTAINERS/>
+                    <SPARES/>
+                </CONTROLLER>
+                <CONTROLLER boot_controller="no" controller_token="PCIE_4CH" partNumber="">
+                    <DRIVES/>
+                    <RAID_CONTAINERS/>
+                    <SPARES/>
+                </CONTROLLER>
+            </CONTROLLERS>
+        </CONTAINER>
+    <CONTAINER name="partsdata" type="xml" version="1.0.0.23">
+            <PARTS MFG_CONFIGID="lscDp+Fs1EkdAhM71Ei5">
+                <PART description="MOD,INFO,GNRC" partNumber="KHCK5" partType="OTHER" sdrType=""/>
+                <PART description="INFO,GNRC,OEM,TRACKING,PN" partNumber="W21JJ" partType="INFO" sdrType=""/>
+                <PART description="MOD,LCD,15.6FHD,IPS,EDP1.2,AUO" partNumber="N37T8" partType="OTHER" sdrType=""/>
+                <PART description="LCD,15.6FHD,IPS,AG,EDP1.2,AUO" partNumber="CV56F" partType="OTHER" sdrType="lcd">
+                    <ATTRIBUTES>
+                        <ATTRIBUTE key="panel" value="TFT"/>
+                        <ATTRIBUTE key="size(inches)" value="15.6"/>
+                        <ATTRIBUTE key="video_standard" value="FHD"/>
+                    </ATTRIBUTES>
+                </PART>
+                <PART description="INFO,SWSI,LCD,15.6,NON-TCH" partNumber="XNHVP" partType="INFO" sdrType=""/>
+                <PART description="MOD,PLMRST,RED,W/OFP,PG,LOKG15" partNumber="X4N35" partType="OTHER" sdrType=""/>
+                <PART description="ASSY,PLMRST,RED,W/OFP,PG,3579" partNumber="XF90J" partType="OTHER" sdrType=""/>
+                <PART description="MOD,CVR,LCD,RED,NT,W/OC,3579" partNumber="N8M09" partType="OTHER" sdrType=""/>
+                <PART description="ASSY,CBL,EDP,3579" partNumber="MVJ46" partType="OTHER" sdrType=""/>
+                <PART description="KIT,CVR,HNGUP,NT,WO/C,RED,3579" partNumber="RRJ56" partType="OTHER" sdrType=""/>
+                <PART description="ASSY,CMRA,720P,0.9M,5SF125N2" partNumber="WNTY0" partType="OTHER" sdrType="integrated_camera">
+                    <ATTRIBUTES>
+                        <ATTRIBUTE key="model" value="5SF125N2"/>
+                        <ATTRIBUTE key="pixel_resolution" value="0.9"/>
+                        <ATTRIBUTE key="pixel_resolution_units" value="MP"/>
+                        <ATTRIBUTE key="product_id" value="576D"/>
+                        <ATTRIBUTE key="vendor" value="LITEON"/>
+                        <ATTRIBUTE key="vendor_id" value="0BDA"/>
+                    </ATTRIBUTES>
+                </PART>
+                <PART description="MOD,LBL,QR CODE,CHINA,GAMING" partNumber="15R6Y" partType="OTHER" sdrType=""/>
+                <PART description="LBL,QR CODE,CHINA,GAMING NB" partNumber="4VWC7" partType="OTHER" sdrType=""/>
+                <PART description="MOD,GDE,PROD,MUI,SERI,APCC,CC" partNumber="C2CXX" partType="OTHER" sdrType=""/>
+                <PART description="GDE,PROD,MUI,SERI,APCC,CCC" partNumber="TJMYT" partType="OTHER" sdrType=""/>
+                <PART description="MOD,INFO,C DRIVE,SSD" partNumber="Y9VHJ" partType="OTHER" sdrType=""/>
+                <PART description="INFO,C DRIVE,MSSD" partNumber="7K4MH" partType="INFO" sdrType=""/>
+                <PART description="MOD,PLCMT,GETS,A/C,3579" partNumber="3TWD0" partType="OTHER" sdrType=""/>
+                <PART description="PLCMT,GETS,INSP 3579,A/C" partNumber="FJR68" partType="OTHER" sdrType=""/>
+                <PART description="MOD,LBL,OFFICE,PLMRST,CHINA" partNumber="RVWPP" partType="OTHER" sdrType=""/>
+                <PART description="LBL,OFFICE,PLMRST,CHINA" partNumber="WPC8C" partType="OTHER" sdrType=""/>
+                <PART description="MOD,INFO,GNRC,RETAIL" partNumber="C856H" partType="OTHER" sdrType=""/>
+                <PART description="INFO,PLACEHOLDER,PIECE-PART" partNumber="864KE" partType="INFO" sdrType=""/>
+                <PART description="MOD,INFO,RETAIL" partNumber="N990H" partType="OTHER" sdrType=""/>
+                <PART description="INFO,RETAIL" partNumber="P637H" partType="INFO" sdrType=""/>
+                <PART description="MOD,LBL,CEL,DIS,3579" partNumber="T8T12" partType="OTHER" sdrType=""/>
+                <PART description="LBL,CEL,DIS,3579" partNumber="NTXCJ" partType="OTHER" sdrType=""/>
+                <PART description="MOD,LBL,COO,130W,CHI,CD,3579" partNumber="TC26D" partType="OTHER" sdrType=""/>
+                <PART description="LBL,REG,COO,130W,CHI,CD,3579" partNumber="RNR35" partType="OTHER" sdrType=""/>
+                <PART description="MOD,INFO,DIRSHP,CMPL,CHENGDU" partNumber="WHHG4" partType="OTHER" sdrType=""/>
+                <PART description="INFO,DIRSHP,CMPL,CHENGDU" partNumber="4XFT2" partType="INFO" sdrType=""/>
+                <PART description="MOD,DIMM,8GB,1X8G,2666,N-ECC" partNumber="DG8M3" partType="OTHER" sdrType=""/>
+                <PART description="DIMM,8GB,2666,1RX8,8G,DDR4,S" partNumber="HYXPX" partType="OTHER" sdrType="system_memory_module">
+                    <ATTRIBUTES>
+                        <ATTRIBUTE key="error_handling" value="NONE"/>
+                        <ATTRIBUTE key="memory_rank" value="DR"/>
+                        <ATTRIBUTE key="memory_type" value="SDRAM"/>
+                        <ATTRIBUTE key="memory_width" value="8"/>
+                        <ATTRIBUTE key="package_type" value="DIMM"/>
+                        <ATTRIBUTE key="size(MB)" value="8192"/>
+                        <ATTRIBUTE key="speed(MHz)" value="2666"/>
+                    </ATTRIBUTES>
+                </PART>
+                <PART description="MOD,SSDR,128,80S3,HYNIX,SC311" partNumber="JNH00" partType="OTHER" sdrType=""/>
+                <PART description="INFO,1ST BOOT,HARD DRIVE" partNumber="00159" partType="INFO" sdrType=""/>
+                <PART description="SSDR,128,S3,80S3,HYNIX,SC311" partNumber="6HG72" partType="OTHER" sdrType="hard_drive(m2_ssd)">
+                    <ATTRIBUTES>
+                        <ATTRIBUTE key="capacity(MB)" value="128000"/>
+                        <ATTRIBUTE key="interface" value="SERIAL"/>
+                    </ATTRIBUTES>
+                </PART>
+                <PART description="MOD,HD,1T,5.4,2.5,7,#2,SM,RSWA" partNumber="GMY23" partType="OTHER" sdrType=""/>
+                <PART description="INFO,ADD BOOT HARD DRIVE" partNumber="00160" partType="INFO" sdrType=""/>
+                <PART description="HD,1TB,5.4,2.5,7,SM,SGT-RSWA" partNumber="2J7C1" partType="OTHER" sdrType="hard_drive">
+                    <ATTRIBUTES>
+                        <ATTRIBUTE key="capacity(MB)" value="1000000"/>
+                        <ATTRIBUTE key="encryption_enabled" value="NO"/>
+                        <ATTRIBUTE key="interface" value="SERIAL"/>
+                        <ATTRIBUTE key="spindle_speed(RPM)" value="5400"/>
+                    </ATTRIBUTES>
+                </PART>
+                <PART description="MOD,ADPT,AC,130W,LTON,CCR,WW" partNumber="RHF6K" partType="OTHER" sdrType=""/>
+                <PART description="ADPT,AC,130W,LTON,7.4,CCR,V2" partNumber="63P9N" partType="OTHER" sdrType=""/>
+                <PART description="MOD,CORD,PWR,250V,1M,C5,CHI" partNumber="W151C" partType="OTHER" sdrType=""/>
+                <PART description="CORD,PWR,250V,2.5A,1M,C5,CHI" partNumber="M575C" partType="OTHER" sdrType=""/>
+                <PART description="MOD,BTRY,56WHR,4C,LITH,LGC" partNumber="2KWY7" partType="OTHER" sdrType=""/>
+                <PART description="BTRY,PRI,56WHR,4C,LITH,LGC" partNumber="99NF2" partType="OTHER" sdrType="battery">
+                    <ATTRIBUTES>
+                        <ATTRIBUTE key="Battery_pack_charge_capacity(WHR)" value="56"/>
+                        <ATTRIBUTE key="chemical_type" value="LITHIUM"/>
+                        <ATTRIBUTE key="number_of_cells" value="4"/>
+                    </ATTRIBUTES>
+                </PART>
+                <PART description="MOD,LBL,INTEL,CI5,8,SML" partNumber="J30PT" partType="OTHER" sdrType=""/>
+                <PART description="LBL,INTEL,CI5,8,SML" partNumber="1TXG2" partType="OTHER" sdrType=""/>
+                <PART description="MOD,INFO,GNRC" partNumber="KHCK5" partType="OTHER" sdrType=""/>
+                <PART description="INFO,GNRC,OEM,TRACKING,PN" partNumber="W21JJ" partType="INFO" sdrType=""/>
+                <PART description="MOD,INFO,LBL,POD,DEO,ESTAR" partNumber="GMXR6" partType="OTHER" sdrType=""/>
+                <PART description="INSTR,ODM,POD,LBL,DEO,ESTAR" partNumber="51H8W" partType="OTHER" sdrType=""/>
+                <PART description="INFO,LBL,DEO,ESTAR" partNumber="9XP3W" partType="INFO" sdrType=""/>
+                <PART description="MOD,INFO,GNRC" partNumber="KHCK5" partType="OTHER" sdrType=""/>
+                <PART description="INFO,GNRC,OEM,TRACKING,PN" partNumber="W21JJ" partType="INFO" sdrType=""/>
+                <PART description="MOD,INFO,GNRC" partNumber="KHCK5" partType="OTHER" sdrType=""/>
+                <PART description="INFO,GNRC,OEM,TRACKING,PN" partNumber="W21JJ" partType="INFO" sdrType=""/>
+                <PART description="MOD,CRD,NTWK,M2,9462AC,WW,CSMB" partNumber="9J8YF" partType="OTHER" sdrType=""/>
+                <PART description="CRD,WRLES,M.2,INTEL9462,WW" partNumber="1275K" partType="OTHER" sdrType="network_card">
+                    <ATTRIBUTES>
+                        <ATTRIBUTE key="deviceid" value="FFFF"/>
+                        <ATTRIBUTE key="model" value="9462.NGWGD"/>
+                        <ATTRIBUTE key="subsystemid" value="42A4"/>
+                        <ATTRIBUTE key="subvendorid" value="8086"/>
+                        <ATTRIBUTE key="vendor" value="INTEL"/>
+                        <ATTRIBUTE key="vendorid" value="8086"/>
+                    </ATTRIBUTES>
+                </PART>
+                <PART description="LBL,REG,WRLES,9462AC,WW,CSMB" partNumber="9TR4H" partType="OTHER" sdrType=""/>
+                <PART description="MOD,KYBD,101,US,ENG,M16NXC-USQ" partNumber="X173Y" partType="OTHER" sdrType=""/>
+                <PART description="KYBD,101,US,ENG,M16NXC-USQ" partNumber="C3FD5" partType="OTHER" sdrType="keyboard">
+                    <ATTRIBUTES>
+                        <ATTRIBUTE key="language" value="A_US"/>
+                        <ATTRIBUTE key="number_of_keys" value="101"/>
+                    </ATTRIBUTES>
+                </PART>
+                <PART description="MOD-SRV,SW,9560/9462,3579" partNumber="7JTWY" partType="OTHER" sdrType=""/>
+                <PART description="SRV,DRVR,WIFI,9560/9462,LOKI G" partNumber="KHGT0" partType="SRV" sdrType=""/>
+                <PART description="SRV,DRVR,BT,LOKI G" partNumber="MDCY1" partType="SRV" sdrType=""/>
+                <PART description="MOD,SW,OFFICE,MUI,FI" partNumber="MTYW0" partType="OTHER" sdrType=""/>
+                <PART description="INFO,WINRE-ADDR,3,GB-PTN" partNumber="HR8X9" partType="INFO" sdrType=""/>
+                <PART description="SRV,SW,OFC2016,OPK" partNumber="5NM85" partType="SRV" sdrType=""/>
+                <PART description="SRV,SW,OFC2016,OPK" partNumber="7M1KY" partType="SRV" sdrType=""/>
+                <PART description="MOD,SW,QFE,WIN10" partNumber="0P1H1" partType="OTHER" sdrType=""/>
+                <PART description="SRV,SW,JUMPSTART,W10" partNumber="0RR64" partType="SRV" sdrType=""/>
+                <PART description="INFO,WINDOWS,10" partNumber="D6KX0" partType="INFO" sdrType=""/>
+                <PART description="SRV,SW,WIN10,RDX" partNumber="GYTDF" partType="SRV" sdrType=""/>
+                <PART description="SRV,WINDOWS,REG,PWR" partNumber="NGC17" partType="SRV" sdrType=""/>
+                <PART description="INFO,RYLTY,W10,DOLBY5.1,CODEC" partNumber="X7V4Y" partType="INFO" sdrType=""/>
+                <PART description="MOD,SW,W10,EDITION,EM" partNumber="1NJXX" partType="OTHER" sdrType=""/>
+                <PART description="SRV,SW,MS,LINKEDIN" partNumber="00VV1" partType="SRV" sdrType=""/>
+                <PART description="INFO,WIN10,EM" partNumber="HMX3H" partType="INFO" sdrType=""/>
+                <PART description="MOD,SW,MS,GML,OS,WINDOWS" partNumber="2HF94" partType="OTHER" sdrType=""/>
+                <PART description="LBL,GML,MS,OS,WINDOWS" partNumber="9NGMV" partType="OTHER" sdrType=""/>
+                <PART description="MOD,SW,WIN10,64,SCHI,CCC" partNumber="6WC1F" partType="OTHER" sdrType=""/>
+                <PART description="INFO,BOOT,GPT,OVERRIDE" partNumber="0616F" partType="INFO" sdrType=""/>
+                <PART description="SRV,OS,WIN10,64,SCHI" partNumber="6RR74" partType="SRV" sdrType=""/>
+                <PART description="INFO,WINDOWS,10" partNumber="D6KX0" partType="INFO" sdrType=""/>
+                <PART description="INFO,IE@V,110000" partNumber="HNX8N" partType="INFO" sdrType=""/>
+                <PART description="INFO,.NET@V,46000" partNumber="KYWGW" partType="INFO" sdrType=""/>
+                <PART description="INFO,VPEPR" partNumber="PJ289" partType="INFO" sdrType=""/>
+                <PART description="INFO,.NET@V,50000" partNumber="PY79K" partType="INFO" sdrType=""/>
+                <PART description="SRV,OS,OCA-MARKER" partNumber="T2673" partType="SRV" sdrType=""/>
+                <PART description="INFO,SLP2,ENABLE,WINDOWS" partNumber="TM318" partType="INFO" sdrType=""/>
+                <PART description="SRV,OS,IE,INSTALLER" partNumber="W728F" partType="SRV" sdrType=""/>
+                <PART description="INFO,BYPS,UPTN" partNumber="X0601" partType="INFO" sdrType=""/>
+                <PART description="SRV,OS,DOTNET,INSTALLER" partNumber="X278C" partType="SRV" sdrType=""/>
+                <PART description="INFO,BOOT,CNTNR,GPT" partNumber="XP9T9" partType="INFO" sdrType=""/>
+                <PART description="MOD,SW,DPK,W10H,EM,PRC,CPPP,HE" partNumber="HCGG7" partType="OTHER" sdrType=""/>
+                <PART description="DPK,W10H,EM,PRC,CPPP,HE" partNumber="HDNXW" partType="OTHER" sdrType=""/>
+                <PART description="MOD-SRV,SW,WIN,INS,3579" partNumber="8HYFD" partType="OTHER" sdrType=""/>
+                <PART description="SRV,DRVR,ESTR,XLOB" partNumber="07HF9" partType="SRV" sdrType=""/>
+                <PART description="SRV,DRVR,INTL HD GX,LOKI G" partNumber="0800G" partType="SRV" sdrType=""/>
+                <PART description="SRV,DRVR,SGX" partNumber="0PW7F" partType="SRV" sdrType=""/>
+                <PART description="SRV,SW,EXCAL-SOS/DDRE,BASE" partNumber="0WJWR" partType="SRV" sdrType=""/>
+                <PART description="SRV,DRVR,SERIAL,IO,LOKI G" partNumber="1JCHY" partType="SRV" sdrType=""/>
+                <PART description="SRV,DRVR,PCIE CTL,LOKI G" partNumber="2D65P" partType="SRV" sdrType=""/>
+                <PART description="SRV,SW,DPM" partNumber="2PGXF" partType="SRV" sdrType=""/>
+                <PART description="SRV,SW,FIST" partNumber="57154" partType="SRV" sdrType=""/>
+                <PART description="INFO,SW,UTILITY-PARTITION,10MB" partNumber="58548" partType="INFO" sdrType=""/>
+                <PART description="SRV,SW,EXCAL,WIN-CMPNT" partNumber="6CVXH" partType="SRV" sdrType=""/>
+                <PART description="INFO,RYLTY,RIVET,SMARTBYTE,5K" partNumber="79DRF" partType="INFO" sdrType=""/>
+                <PART description="INFO,IRST,META-PTN,5M" partNumber="83F5D" partType="INFO" sdrType=""/>
+                <PART description="INFO,SW,DEFAULT,NTFS" partNumber="8564U" partType="INFO" sdrType=""/>
+                <PART description="SRV,SW,APP,SMARTBYTE" partNumber="8JGDK" partType="SRV" sdrType=""/>
+                <PART description="SRV,REMOVE,CHINA,CTA" partNumber="9MK2C" partType="SRV" sdrType=""/>
+                <PART description="SRV,DRVR,INTL,MEI,LOKI G" partNumber="CK6DX" partType="SRV" sdrType=""/>
+                <PART description="INFO,64-BIT,UEFI-MFG,PROCESS" partNumber="DF3MX" partType="INFO" sdrType=""/>
+                <PART description="SRV,HTML,DOC,CSMR,WW" partNumber="GR54X" partType="SRV" sdrType=""/>
+                <PART description="SRV,DRVR,DPTF,LOKI G" partNumber="H4JJ6" partType="SRV" sdrType=""/>
+                <PART description="SRV,DRVR,RTK AUD,LOKI INTEL" partNumber="M1NTW" partType="SRV" sdrType=""/>
+                <PART description="INFO,RYLTY,WAVES-MAXX,AUD,PRO" partNumber="M3C3H" partType="INFO" sdrType=""/>
+                <PART description="SRV,SW,G-SERISE,RE-BRANDING" partNumber="NJCM4" partType="SRV" sdrType=""/>
+                <PART description="INFO,WINRE-SIZE,15,GB-PTN" partNumber="NU242" partType="INFO" sdrType=""/>
+                <PART description="SRV,DRVR,CHIPSET,EVTFLTR,LOKIG" partNumber="PN7TC" partType="SRV" sdrType=""/>
+                <PART description="SRV,W10,INTEL,PPM" partNumber="RDX5C" partType="SRV" sdrType=""/>
+                <PART description="SRV,DRVR,CHIPSET,DSD,LOKI G" partNumber="WVY6M" partType="SRV" sdrType=""/>
+                <PART description="SRV,BIOS RECOVERY 2" partNumber="WXM2C" partType="SRV" sdrType=""/>
+                <PART description="INFO,UEFI-CL3" partNumber="XPRGW" partType="INFO" sdrType=""/>
+                <PART description="SRV,DRVR,RTK,USB,LOKI G" partNumber="XVNJD" partType="SRV" sdrType=""/>
+                <PART description="SRV,DRVR,SERIAL ATA,LOKI G" partNumber="YFMPG" partType="SRV" sdrType=""/>
+                <PART description="SRV,DRVR,APP,AUDIO,35/779" partNumber="YWWPT" partType="SRV" sdrType=""/>
+                <PART description="MOD-SRV,SW,W/PAPER,G3,REDLOGO" partNumber="K22DT" partType="OTHER" sdrType=""/>
+                <PART description="SRV,WALLPAPER,G3,RED-LOGO" partNumber="244CP" partType="SRV" sdrType=""/>
+                <PART description="MOD,SW,SMOD,INSP,W10,CHI" partNumber="NJ21N" partType="OTHER" sdrType=""/>
+                <PART description="SRV,SW,MY DELL" partNumber="4H7K9" partType="SRV" sdrType=""/>
+                <PART description="SRV,SW,DDRE,CSMB" partNumber="W171T" partType="SRV" sdrType=""/>
+                <PART description="INFO,WINRE-ADDR,12,GB-PTN" partNumber="CRJV6" partType="INFO" sdrType=""/>
+                <PART description="SRV,SW,OTB,SURV" partNumber="7VDFT" partType="SRV" sdrType=""/>
+                <PART description="SRV,SW,MS,XLTR,W10" partNumber="PT0YN" partType="SRV" sdrType=""/>
+                <PART description="INFO,RYLTY,SCREENOVATE,DMC,CHN" partNumber="H8N0H" partType="INFO" sdrType=""/>
+                <PART description="SRV,SW,DMC" partNumber="PMGWT" partType="SRV" sdrType=""/>
+                <PART description="SRV,SW,DELL-UPDATE,UWP" partNumber="15V18" partType="SRV" sdrType=""/>
+                <PART description="SRV,SW,DELL-UPDATE" partNumber="58R15" partType="SRV" sdrType=""/>
+                <PART description="INFO,.NET@V,47000" partNumber="83VMP" partType="INFO" sdrType=""/>
+                <PART description="SRV,SW,APP,SACLIENT" partNumber="334CH" partType="SRV" sdrType=""/>
+                <PART description="SRV,SW,APP,SACLIENT,W10S" partNumber="7CVVR" partType="SRV" sdrType=""/>
+                <PART description="INFO,RYLTY,SACLIENT" partNumber="K53RM" partType="INFO" sdrType=""/>
+                <PART description="SRV,SW,CRRS,MUI" partNumber="YR2T2" partType="SRV" sdrType=""/>
+                <PART description="INFO,SW,CRRS,UPDATE" partNumber="C2N45" partType="INFO" sdrType=""/>
+                <PART description="MOD,SW,COMMONBUILD,XLOB" partNumber="85Y47" partType="OTHER" sdrType=""/>
+                <PART description="SRV,SW,MCAFEE,COMMONBUILD,M" partNumber="4F6WW" partType="SRV" sdrType=""/>
+                <PART description="SRV,SW,MCAFE,CB,LIVESAFE,WIN10" partNumber="FD09N" partType="SRV" sdrType=""/>
+                <PART description="INFO,SW,COMMONBUILD,30DAY" partNumber="GVXWF" partType="INFO" sdrType=""/>
+                <PART description="SRV,SW,MCAF-SCTY,UPDATES" partNumber="M8192" partType="SRV" sdrType=""/>
+                <PART description="SRV,SW,MCAFEE,COMMONBUILD" partNumber="V7CT5" partType="SRV" sdrType=""/>
+                <PART description="MOD,SW,NDGN,CWDR,CHI" partNumber="M55PW" partType="OTHER" sdrType=""/>
+                <PART description="SRV,SW,NDGN,CWDR,CHI" partNumber="XF88N" partType="SRV" sdrType=""/>
+                <PART description="MOD,INFO,COMBLD,15M,EM,CRRS" partNumber="HN5RR" partType="OTHER" sdrType=""/>
+                <PART description="INFO,SW,COMBUILD,15M,EMARKET" partNumber="2KCVH" partType="INFO" sdrType=""/>
+                <PART description="MOD,CARD,WARR,SERV,CCC" partNumber="KP334" partType="OTHER" sdrType=""/>
+                <PART description="CARD,WARR,SERV,CCC" partNumber="MU373" partType="OTHER" sdrType=""/>
+                <PART description="MOD,SHP MTL,INSP,LOKI,15G,WW" partNumber="680G8" partType="OTHER" sdrType=""/>
+                <PART description="SHP MTL,PAD,KYBD,LOKI,15" partNumber="014N7" partType="OTHER" sdrType=""/>
+                <PART description="SHP MTL,CSHN,MPP,TOP,LOKI,15G" partNumber="1MDY3" partType="OTHER" sdrType=""/>
+                <PART description="SHP MTL,CSHN,MPP,BTM,LOKI,15G" partNumber="65PKK" partType="OTHER" sdrType=""/>
+                <PART description="SHP MTL,BAG,SYSM,14,15,YFYJ" partNumber="C1JGF" partType="OTHER" sdrType=""/>
+                <PART description="SHP MTL,ACC,PAD,INSP,15G" partNumber="P0W5G" partType="OTHER" sdrType=""/>
+                <PART description="SHP MTL,BOX,INSP,LOKI,15G,WW" partNumber="V4NYR" partType="OTHER" sdrType=""/>
+                <PART description="FGA PROXY,PH1393P,BTO" partNumber="Y2P7K" partType="OTHER" sdrType=""/>
+                <PART description="FGA PROXY,PH1393P,BTO" partNumber="Y2P7K" partType="OTHER" sdrType=""/>
+                <PART description="BASE,NBK,BTX,LOKIG15CFL,3579" partNumber="T2JPW" partType="OTHER" sdrType="notebook_base">
+                    <ATTRIBUTES>
+                        <ATTRIBUTE key="chassis_type" value="NOTEBOOK"/>
+                        <ATTRIBUTE key="dell_model_name" value="3579"/>
+                        <ATTRIBUTE key="embedded_network_model" value="9462ac"/>
+                        <ATTRIBUTE key="embedded_network_vendor" value="INTEL"/>
+                        <ATTRIBUTE key="family" value="YBXV_T_15"/>
+                        <ATTRIBUTE key="number_of_parallel_ports" value="0"/>
+                        <ATTRIBUTE key="number_of_prepopulated_sockets" value="0"/>
+                        <ATTRIBUTE key="number_of_processor_sockets" value="1"/>
+                        <ATTRIBUTE key="number_of_serial_ports" value="0"/>
+                        <ATTRIBUTE key="system_memory_size(MB)" value="0"/>
+                    </ATTRIBUTES>
+                    <EMBEDDED_PARTS>
+                        <EMBEDDED_PART sdrType="embedded_drive_controller">
+                            <ATTRIBUTES>
+                                <ATTRIBUTE key="controller_token" value="SERIAL_4CH"/>
+                                <ATTRIBUTE key="interface" value="SERIAL"/>
+                            </ATTRIBUTES>
+                        </EMBEDDED_PART>
+                        <EMBEDDED_PART sdrType="embedded_drive_controller">
+                            <ATTRIBUTES>
+                                <ATTRIBUTE key="controller_token" value="PCIE_4CH"/>
+                                <ATTRIBUTE key="interface" value="PCIE"/>
+                            </ATTRIBUTES>
+                        </EMBEDDED_PART>
+                    </EMBEDDED_PARTS>
+                </PART>
+                <PART description="LBL,SVC TAG/EXPRESS CODE,ANW" partNumber="9872G" partType="OTHER" sdrType=""/>
+                <PART description="INFO,SWSI,NB,STD,INS,3579" partNumber="DC9DY" partType="INFO" sdrType=""/>
+                <PART description="MOD,ASSY,BASE,I58300H,4,P1,SPP" partNumber="P2WK8" partType="OTHER" sdrType=""/>
+                <PART description="LBL,NVIDIA,GTX,INSP,7447" partNumber="0KP6X" partType="OTHER" sdrType=""/>
+                <PART description="SRV,DRVR,NVIDIA GTX1050,LOKI G" partNumber="1KP81" partType="SRV" sdrType=""/>
+                <PART description="SRV,DRVR,NV GTX 1050,W32,LOKIG" partNumber="4M7PR" partType="SRV" sdrType=""/>
+                <PART description="ASSY,TPAD,LOKI-G15/17" partNumber="55K5P" partType="OTHER" sdrType=""/>
+                <PART description="ASSY,SPKR,#W,XXXX,3579" partNumber="74T23" partType="OTHER" sdrType=""/>
+                <PART description="ASSY,BASE,NBK,I58300H,4,P1NTBT" partNumber="JYXHN" partType="OTHER" sdrType="video_card">
+                    <ATTRIBUTES>
+                        <ATTRIBUTE key="bus" value="PCI"/>
+                        <ATTRIBUTE key="deviceid" value="1C8C"/>
+                        <ATTRIBUTE key="double_wide" value="No"/>
+                        <ATTRIBUTE key="memory_size(MB)" value="4096"/>
+                        <ATTRIBUTE key="model" value="GTX1050Ti"/>
+                        <ATTRIBUTE key="subsystemid" value="086F"/>
+                        <ATTRIBUTE key="subvendorid" value="1028"/>
+                        <ATTRIBUTE key="vendor" value="NVIDIA"/>
+                        <ATTRIBUTE key="vendorid" value="10DE"/>
+                    </ATTRIBUTES>
+                </PART>
+                <PART description="Aliased part of JYXHN" partNumber="FPWR7" partType="OTHER" sdrType="processor">
+                    <ATTRIBUTES>
+                        <ATTRIBUTE key="cpu_name" value="I5-8300H"/>
+                        <ATTRIBUTE key="extension" value="64"/>
+                        <ATTRIBUTE key="integrated_gpu" value="YES"/>
+                        <ATTRIBUTE key="L2_cache_size(K)" value="256"/>
+                        <ATTRIBUTE key="L3_cache_size(K)" value="8192"/>
+                        <ATTRIBUTE key="memory_speed" value="2133"/>
+                        <ATTRIBUTE key="number_of_cores" value="4"/>
+                        <ATTRIBUTE key="processor_family" value="COFFEE LAKE-H"/>
+                        <ATTRIBUTE key="processor_speed(MHz)" value="2300"/>
+                        <ATTRIBUTE key="qpi_speed/front_bus_speed(MHz)" value="2133"/>
+                        <ATTRIBUTE key="SpeedStep_support" value="YES"/>
+                    </ATTRIBUTES>
+                </PART>
+                <PART description="INFO,TRACKER FOR SPP PROGRAM" partNumber="M8N2Y" partType="INFO" sdrType=""/>
+                <PART description="MOD,INFO,GNRC" partNumber="KHCK5" partType="OTHER" sdrType=""/>
+                <PART description="INFO,GNRC,OEM,TRACKING,PN" partNumber="W21JJ" partType="INFO" sdrType=""/>
+            </PARTS>
+        </CONTAINER>
+  </DATACONTAINERS>
+</GCF>

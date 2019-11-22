@@ -15,41 +15,47 @@ public class ArticleDaoTest {
 
     private static Logger logger = LoggerFactory.getLogger(ArticleDao.class);
     private ArticleDao articleDao = DaoFactory.getArticleDaoInstance();
+//    @Test
+//    public void batckInsert() throws SQLException {
+//        try{
+//            int[] result = articleDao.batckInsert(JSoupSpider.getArticles());
+//            if(result.length != 0){
+//                logger.info("成功新添" + result.length + "篇文章");
+//            }
+//        }catch (SQLException e){
+//            logger.error("批量新增文章异常");
+//        }
+//
+//
+//    }
+//
+//    @Test
+//    public void findAll() throws SQLException {
+//        try{
+//            List<Article> articleList ;
+//            articleList = articleDao.findAll();
+//            if (articleList != null){
+//                System.out.println("查找数据成功");
+//                for(int i=0; i<10 ;i++){
+//                    Article article = articleList.get(i);
+//                    System.out.println(article.getUserID());
+//                    System.out.println(article.getContent());
+//                }
+//
+//
+//
+//            }
+//        }catch (SQLException e){
+//            logger.error("查询数据库数据异常");
+//        }
+//
+//
+//
+//    }
+
     @Test
-    public void batckInsert() throws SQLException {
-        try{
-            int[] result = articleDao.batckInsert(JSoupSpider.getArticles());
-            if(result.length != 0){
-                logger.info("成功新添" + result.length + "篇文章");
-            }
-        }catch (SQLException e){
-            logger.error("批量新增文章异常");
-        }
-
-
-    }
-
-    @Test
-    public void findAll() throws SQLException {
-        try{
-            List<Article> articleList ;
-            articleList = articleDao.findAll();
-            if (articleList != null){
-                System.out.println("查找数据成功");
-                for(int i=0; i<10 ;i++){
-                    Article article = articleList.get(i);
-                    System.out.println(article.getUserID());
-                    System.out.println(article.getContent());
-                }
-
-
-
-            }
-        }catch (SQLException e){
-            logger.error("查询数据库数据异常");
-        }
-
-
-
+    public void batchInsert() throws SQLException {
+        int i[] = articleDao.batchInsert(JSoupSpider.getArticles());
+        System.out.println("数组长度为："+i.length);
     }
 }

@@ -1,0 +1,56 @@
+[2019-11-21 20:21:36]
+[Unsupported] Office 19, Office19ProPlus2019VL_KMS_Client_AE edition(85dd8b5f-eaa4-4af3-a628-cce9e77c9a03) System: 10 Home China
+[2019-11-21 20:22:04]
+Microsoft (R) Windows Script Host Version 5.812
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+---Processing--------------------------
+---------------------------------------
+Installed product key detected - attempting to activate the following product:
+SKU ID: 6bf301c1-b94a-43e9-ba31-d494598c47fb
+LICENSE NAME: Office 16, Office16VisioProVL_KMS_Client edition
+LICENSE DESCRIPTION: Office 16, VOLUME_KMSCLIENT channel
+Last 5 characters of installed product key: RJRJK
+<Product activation successful>
+---------------------------------------
+Installed product key detected - attempting to activate the following product:
+SKU ID: 70d9ceb6-6dfa-4da4-b413-18c1c3c76e2e
+LICENSE NAME: Office 16, Office16ProPlusR_Grace edition
+LICENSE DESCRIPTION: Office 16, RETAIL(Grace) channel
+Last 5 characters of installed product key: BTDRB
+ERROR CODE: 0xC004F017
+ERROR DESCRIPTION: The Software Licensing Service reported that the license is not installed.
+---------------------------------------
+Installed product key detected - attempting to activate the following product:
+SKU ID: 85dd8b5f-eaa4-4af3-a628-cce9e77c9a03
+LICENSE NAME: Office 19, Office19ProPlus2019VL_KMS_Client_AE edition
+LICENSE DESCRIPTION: Office 19, VOLUME_KMSCLIENT channel
+Last 5 characters of installed product key: 6MWKP
+<Product activation successful>
+---------------------------------------
+Installed product key detected - attempting to activate the following product:
+SKU ID: c28acdb8-d8b3-4199-baa4-024d09e97c99
+LICENSE NAME: Office 16, Office16HomeStudentR_Retail edition
+LICENSE DESCRIPTION: Office 16, RETAIL channel
+Last 5 characters of installed product key: GVJYX
+<Product activation successful>
+---------------------------------------
+Installed product key detected - attempting to activate the following product:
+SKU ID: d450596f-894d-49e0-966a-fd39ed4c4c64
+LICENSE NAME: Office 16, Office16ProPlusVL_KMS_Client edition
+LICENSE DESCRIPTION: Office 16, VOLUME_KMSCLIENT channel
+Last 5 characters of installed product key: WFG99
+<Product activation successful>
+---------------------------------------
+Installed product key detected - attempting to activate the following product:
+SKU ID: d7279dd0-e175-49fe-a623-8fc2fc00afc4
+LICENSE NAME: Office 16, Office16O365HomePremR_Grace edition
+LICENSE DESCRIPTION: Office 16, RETAIL(Grace) channel
+Last 5 characters of installed product key: KHGM9
+ERROR CODE: 0xC004F017
+ERROR DESCRIPTION: The Software Licensing Service reported that the license is not installed.
+---------------------------------------
+---------------------------------------
+---Exiting-----------------------------
+
+

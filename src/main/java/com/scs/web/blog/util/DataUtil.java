@@ -3,6 +3,7 @@ package com.scs.web.blog.util;
 import org.apache.commons.codec.digest.DigestUtils;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Random;
 
 /**
@@ -12,7 +13,7 @@ import java.util.Random;
  * @Date 2019/11/9
  * @Version 1.0
  **/
-public class UserDataUtil {
+public class DataUtil {
 
     /**
      * 获取电话号码
@@ -58,8 +59,19 @@ public class UserDataUtil {
 
     public static int getUserID() {
         Random random = new Random();
-        int userID = random.nextInt(100);
+        int userID = random.nextInt(73);
         return userID;
+    }
+
+    /**
+     * 生成时间
+     * @return
+     */
+    public static LocalDateTime getCreateTime(){
+        LocalDateTime now = LocalDateTime.now();
+        Random random = new Random();
+        int bound = random.nextInt(999);
+        return now.minusHours(bound);
     }
 
     public static String getNumberCode() {
@@ -95,7 +107,7 @@ public class UserDataUtil {
     public static void main(String[] args) {
 
         for (int i=0 ; i<5; i++){
-            System.out.println("生成的数字验证码为：" + UserDataUtil.getNumberCode());
+            System.out.println("生成的数字验证码为：" + DataUtil.getNumberCode());
         }
 
 

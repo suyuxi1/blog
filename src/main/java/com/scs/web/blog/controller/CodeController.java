@@ -1,6 +1,6 @@
 package com.scs.web.blog.controller;
 
-import com.scs.web.blog.util.UserDataUtil;
+import com.scs.web.blog.util.DataUtil;
 import com.scs.web.blog.verify.ImageUtil;
 
 import javax.imageio.ImageIO;
@@ -37,7 +37,7 @@ public class CodeController extends HttpServlet {
 //    }
 @Override
 protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    String code = UserDataUtil.getNumberCode();
+    String code = DataUtil.getNumberCode();
 
     HttpSession session = req.getSession();
     System.out.println(session.getId());

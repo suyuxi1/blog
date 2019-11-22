@@ -3,7 +3,7 @@ package com.scs.web.blog.dao.impl;
 
 
 import com.scs.web.blog.dao.UserDao;
-import com.scs.web.blog.domain.UserDto;
+import com.scs.web.blog.domain.dto.UserDto;
 import com.scs.web.blog.entity.User;
 
 import com.scs.web.blog.util.DbUtil;
