@@ -15,6 +15,13 @@ public interface ArticleDao {
      * @throws SQLException
      */
     int[] batchInsert(List<Article> articleList) throws SQLException;
+        /**
+     * 查找所有文章
+     * @return List
+     * @throws SQLException
+     */
+    List<Article> findAll() throws SQLException;
+
 
     /**
      * 查询热门文章，返回视图集合

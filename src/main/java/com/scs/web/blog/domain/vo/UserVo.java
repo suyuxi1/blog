@@ -35,4 +35,5 @@ public class UserVo {
     private Short status;
     private List<Article> articleList;
     private List<SimpleUser> simpleUserList;
+
 }

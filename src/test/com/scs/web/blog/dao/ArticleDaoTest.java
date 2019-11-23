@@ -2,7 +2,6 @@ package com.scs.web.blog.dao;
 
 import com.scs.web.blog.entity.Article;
 import com.scs.web.blog.factory.DaoFactory;
-import com.scs.web.blog.util.JSoupSpider;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,33 +28,27 @@ public class ArticleDaoTest {
 //
 //    }
 //
-//    @Test
-//    public void findAll() throws SQLException {
-//        try{
-//            List<Article> articleList ;
-//            articleList = articleDao.findAll();
-//            if (articleList != null){
-//                System.out.println("查找数据成功");
-//                for(int i=0; i<10 ;i++){
-//                    Article article = articleList.get(i);
-//                    System.out.println(article.getUserID());
-//                    System.out.println(article.getContent());
-//                }
-//
-//
-//
-//            }
-//        }catch (SQLException e){
-//            logger.error("查询数据库数据异常");
-//        }
-//
-//
-//
-//    }
+   @Test
+    public void findAll(){
+        try{
+            List<Article> articleList ;
+            articleList = articleDao.findAll();
+            if (articleList != null){
+                System.out.println("查找数据成功");
+                for(int i=0; i<10 ;i++){
+                    Article article = articleList.get(i);
+                    System.out.println("用户id："+article.getUserId());
+                    System.out.println("内容："+article.getContent());
+                }
+            }
+        }catch (SQLException e){
+            logger.error("查询数据库数据异常");
+            e.printStackTrace();
+        }
 
-    @Test
-    public void batchInsert() throws SQLException {
-        int i[] = articleDao.batchInsert(JSoupSpider.getArticles());
-        System.out.println("数组长度为："+i.length);
+
+
     }
+
+
 }

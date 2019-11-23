@@ -7,119 +7,78 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40c2dcf7-8dc1-45c6-8324-9c7ccd474b2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/javax.annotation.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.ejb.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.jms.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.persistence.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.resource.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.transaction.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/controller/TopicController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/dao/TopicDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/dao/impl/TopicDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/domain/dto/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/domain/dto/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/domain/dto/Province.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/domain/dto/ProvinceList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/domain/dto/SimpleUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/domain/vo/ArticleVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/domain/vo/TopicVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/domain/vo/UserVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/entity/Topic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/service/TopicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/service/impl/TopicServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/util/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/util/ResultCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/util/StringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/verify/CodeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/verify/StringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/scs/web/blog/dao/TopicDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/scs/web/blog/service/TopicServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/blog/2019-11-21/3553d9e8e4cf4240bc5f14211d1e5c2d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/blog/2019-11-21/43c654b4cca34afb98a1fcc375c7c0bd.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/blog/2019-11-21/472b3c070f894e258cace5a61f9a86fe.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/blog/2019-11-21/4bab8f4c95c24dd69e639edbe0d2eb6f.BIN" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/blog/2019-11-21/54d1a07e1cb84a5b96ffa6cbd01e3775.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/blog/2019-11-21/70328ee0abbf46e09d49affd0d2f52dc.sdr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/blog/2019-11-21/7b30f79a8b824db7a505bf74af7a5cca.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/blog/2019-11-21/9489992caf2441bbabc07902dceaa685.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/blog/2019-11-21/990f04c8972a4fe3bc98f06c12beb596.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/blog/2019-11-21/afbaf14ea7d746a8be89de063e6d3e44.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/blog/2019-11-21/e637ad08186f4369b1c579463720d783.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/controller/LoginController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/controller/UploadController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/listener/MySessionContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/listener/SessionListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/blog/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/blog/upload.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/controller/LoginController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/controller/UploadController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/listener/MySessionContext.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/listener/SessionListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/error.2019-11-17-19.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/error.2019-11-22-16.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/main.2019-11-19-17.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/main.2019-11-22-08.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/main.2019-11-22-09.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/main.2019-11-22-16.log.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/main.log1998980871600.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/main.log674155285300.tmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/META-INF/blog.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/controller/TopicController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/dao/TopicDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/dao/impl/TopicDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/domain/dto/Address.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/domain/dto/City.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/domain/dto/Province.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/domain/dto/ProvinceList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/domain/dto/SimpleUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/domain/vo/ArticleVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/domain/vo/TopicVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/domain/vo/UserVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/entity/Topic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/service/TopicService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/service/impl/TopicServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/util/DataUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/util/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/util/ResultCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/util/StringUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/verify/CodeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/verify/StringUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/lib/commons-beanutils-1.9.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/lib/commons-collections-3.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/blog/WEB-INF/lib/druid-1.1.21.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/blog.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/controller/TopicController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/dao/TopicDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/dao/impl/TopicDaoImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/domain/dto/Address.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/domain/dto/City.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/domain/dto/Province.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/domain/dto/ProvinceList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/domain/dto/SimpleUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/domain/vo/ArticleVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/domain/vo/TopicVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/domain/vo/UserVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/entity/Topic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/service/TopicService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/service/impl/TopicServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/util/DataUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/util/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/util/ResultCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/util/StringUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/verify/CodeController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/verify/StringUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/scs/web/blog/dao/TopicDaoTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/scs/web/blog/service/TopicServiceTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/main.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/controller/CodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/controller/CodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/dao/ArticleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/dao/impl/ArticleDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/dao/impl/ArticleDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/domain/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/domain/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/entity/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/factory/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/factory/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/factory/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/factory/ServiceFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/service/impl/ArticleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/util/DbUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/util/DbUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/util/JSoupSpider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/util/JSoupSpider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/util/UserDataUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/util/DataUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/verify/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/verify/ImageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/domain/vo/UserVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/scs/web/blog/domain/vo/UserVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/scs/web/blog/dao/ArticleDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/scs/web/blog/dao/ArticleDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/scs/web/blog/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/scs/web/blog/service/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/blog.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/controller/ArticleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/controller/CodeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/controller/CodeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/controller/UserController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/dao/ArticleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/dao/ArticleDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/dao/UserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/dao/impl/ArticleDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/dao/impl/ArticleDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/dao/impl/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/domain/UserDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/entity/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/entity/Article.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/factory/DaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/factory/DaoFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/factory/ServiceFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/factory/ServiceFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/service/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/service/ArticleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/service/impl/ArticleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/service/impl/ArticleServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/util/JSoupSpider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/util/JSoupSpider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/util/UserDataUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/verify/ImageUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/verify/ImageUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/controller/ArticleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/controller/CodeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/controller/CodeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/domain/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/com/scs/web/blog/domain/dto/UserDto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/dao/ArticleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/dao/ArticleDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/dao/UserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/dao/impl/ArticleDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/dao/impl/ArticleDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/dao/impl/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/domain/UserDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/entity/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/entity/Article.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/factory/DaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/factory/DaoFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/factory/ServiceFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/factory/ServiceFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/service/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/service/ArticleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/service/impl/ArticleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/service/impl/ArticleServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/util/JSoupSpider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/util/JSoupSpider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/util/UserDataUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/verify/ImageUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/verify/ImageUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/scs/web/blog/domain/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/scs/web/blog/domain/dto/UserDto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/scs/web/blog/dao/ArticleDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/scs/web/blog/dao/ArticleDaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/scs/web/blog/service/UserServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/scs/web/blog/service/UserServiceTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -202,16 +161,16 @@
       <recent name="com.scs.web.blog.dao.impl" />
       <recent name="com.scs.web.blog.factory" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IDEA\IntelliJ IDEA 2019.2.1\java web\blog\src\main\resources" />
-      <recent name="D:\IDEA\IntelliJ IDEA 2019.2.1\java web\blog\src\main\java\com\scs\web\blog\util" />
-      <recent name="D:\IDEA\IntelliJ IDEA 2019.2.1\java web\blog\src\main\java\com\scs\web\blog\entity" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEA\IntelliJ IDEA 2019.2.1\java web\blog\src\main\java\com\scs\web\blog\listener" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IDEA\IntelliJ IDEA 2019.2.1\java web\blog\src\main\java\com\scs\web\blog\listener" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEA\IntelliJ IDEA 2019.2.1\java web\blog\src\main\resources" />
+      <recent name="D:\IDEA\IntelliJ IDEA 2019.2.1\java web\blog\src\main\java\com\scs\web\blog\util" />
+      <recent name="D:\IDEA\IntelliJ IDEA 2019.2.1\java web\blog\src\main\java\com\scs\web\blog\entity" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -226,20 +185,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TopicDaoTest.batchInsert">
-    <configuration name="DataUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.scs.web.blog.util.DataUtil" />
-      <module name="blog" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.scs.web.blog.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ArticleDaoTest.findAll">
     <configuration name="ImageUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.scs.web.blog.verify.ImageUtil" />
       <module name="blog" />
@@ -280,6 +226,22 @@
       <option name="PACKAGE_NAME" value="com.scs.web.blog.dao" />
       <option name="MAIN_CLASS_NAME" value="com.scs.web.blog.dao.ArticleDaoTest" />
       <option name="METHOD_NAME" value="batckInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArticleDaoTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.scs.web.blog.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.scs.web.blog.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.scs.web.blog.dao.ArticleDaoTest" />
+      <option name="METHOD_NAME" value="findAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -375,19 +337,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.UserDataUtil" />
       <item itemvalue="Application.ImageUtil" />
-      <item itemvalue="Tomcat Server.blog" />
       <item itemvalue="JUnit.ArticleDaoTest.batckInsert" />
       <item itemvalue="JUnit.ArticleDaoTest.batchInsert" />
       <item itemvalue="JUnit.TopicDaoTest.batchInsert" />
+      <item itemvalue="JUnit.ArticleDaoTest.findAll" />
+      <item itemvalue="Tomcat Server.blog" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArticleDaoTest.findAll" />
         <item itemvalue="JUnit.TopicDaoTest.batchInsert" />
         <item itemvalue="JUnit.ArticleDaoTest.batchInsert" />
         <item itemvalue="JUnit.ArticleDaoTest.batckInsert" />
-        <item itemvalue="Application.UserDataUtil" />
         <item itemvalue="Application.ImageUtil" />
       </list>
     </recent_temporary>
@@ -449,7 +411,9 @@
       <workItem from="1574329357830" duration="10567000" />
       <workItem from="1574348543322" duration="204000" />
       <workItem from="1574381258984" duration="1282000" />
-      <workItem from="1574383628577" duration="18863000" />
+      <workItem from="1574383628577" duration="21492000" />
+      <workItem from="1574493054612" duration="6521000" />
+      <workItem from="1574500261147" duration="2322000" />
     </task>
     <task id="LOCAL-00001" summary="登录接口测试提交">
       <created>1573301718602</created>
@@ -486,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574348633094</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="后端第六次提交，重新爬取文章数据">
+      <created>1574431231219</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574431231219</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,6 +482,7 @@
     <MESSAGE value="后端第三次提交，增加查看文章功能" />
     <MESSAGE value="后端第四次提交" />
     <MESSAGE value="后端第五次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="后端第五次提交" />
+    <MESSAGE value="后端第六次提交，重新爬取文章数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="后端第六次提交，重新爬取文章数据" />
   </component>
 </project>

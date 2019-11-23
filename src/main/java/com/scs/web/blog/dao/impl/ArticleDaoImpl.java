@@ -7,10 +7,7 @@ import com.scs.web.blog.util.DbUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -53,7 +50,33 @@ public class ArticleDaoImpl implements ArticleDao {
         return result;
     }
 
-
+    @Override
+    public List<Article> findAll() throws SQLException {
+        List<Article> articleList = new ArrayList<>();
+        Connection connection = DbUtil.getConnection();
+        connection.setAutoCommit(false);
+        String sql = "SELECT * FROM t_article" ;
+        Statement stmt = connection.createStatement();
+        ResultSet rs = stmt.executeQuery(sql);
+        while(rs.next()){
+            Article article = new Article();
+            article.setId(rs.getLong("id"));
+            article.setUserId(rs.getLong("user_id"));
+            article.setTopicId(rs.getLong("topic_id"));
+            article.setTitle(rs.getString("title"));
+            article.setSummary(rs.getString("summary"));
+            article.setThumbnail(rs.getString("thumbnail"));
+            article.setContent(rs.getString("content"));
+            article.setLikes(rs.getInt("likes"));
+            article.setComments(rs.getInt("comments"));
+            article.setCreateTime(rs.getTimestamp("create_Time").toLocalDateTime());
+            articleList.add(article);
+        }
+        connection.commit();
+//        stmt.close();
+//        connection.close();
+        return articleList;
+    }
 
 
     @Override
