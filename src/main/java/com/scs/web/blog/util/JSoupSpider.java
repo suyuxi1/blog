@@ -32,37 +32,6 @@ public class JSoupSpider {
 
     private static Logger logger = LoggerFactory.getLogger(JSoupSpider.class);
 
-//    //静态的公有无参方法，返回List<Student>
-//    public static List<Student> getStudents(){
-//        //声明文档变量
-//        Document document = null;
-//        //通过JSoup连接目标页面
-//        try{
-//            document = Jsoup.connect("https://www.jianshu.com/recommendations/users?utm_source=desktop&utm_medium=index-users").get();
-//
-//        }catch (IOException e){
-//            System.err.println("连接失败");
-//        }
-//        //选取所有class为col-xs-8的元素集合
-//        Elements divs = document.getElementsByClass("col-xs-8");
-//        //创建结合，初始化大小
-//        List<Student> studentList = new ArrayList<>(divs.size());
-//        //对div遍历
-//        divs.forEach(div->{
-//            //取出class为wrap的节点
-//            Element wrapDiv = div.child(0);
-//            Element link = wrapDiv.child(0);
-//            Elements linkChildren = link.children();
-//            Student student = new Student();
-//            student.setUsername(linkChildren.get(1).text());
-//            student.setAvatar("http:" + linkChildren.get(0).attr("src"));
-//            student.setCreateTime(LocalDateTime.now());
-//            student.setDescription(linkChildren.get(2).text());
-//            studentList.add(student);
-//        });
-//        return studentList;
-//    }
-
     public static List<User> getUsers() {
 
         Document document = null;
@@ -157,7 +126,6 @@ public class JSoupSpider {
                 Element articleElement = document1.getElementsByClass("_2rhmJa").first();
                 Article article = new Article();
                 article.setContent(articleElement.html());
-
                 Elements elements = div.children();
                 Element linkElement = elements.get(0);
                 Element divElement = elements.get(1);
@@ -248,13 +216,6 @@ public class JSoupSpider {
             }
             Element element = document1.getElementById("link-report");
             System.out.println(element.child(0).html());
-
-
-
-
-
-
-
         });
         }
 

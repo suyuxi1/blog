@@ -1,6 +1,7 @@
 package com.scs.web.blog.dao;
 
 import com.scs.web.blog.domain.dto.UserDto;
+import com.scs.web.blog.domain.vo.UserVo;
 import com.scs.web.blog.entity.User;
 
 import java.sql.SQLException;
@@ -42,11 +43,30 @@ public interface UserDao {
      * @throws SQLException
      */
     List<User> selectHotUsers()throws SQLException;
-//    /**
-//     * 用户登录账号
-//     * @param user
-//     * @return user
-//     * @throws SQLException
-//     */
-//    User sign (User user) throws  SQLException;
+
+    /**
+     * 查询分页用户
+     *
+     * @return
+     * @throws SQLException
+     */
+    List<User> selectByPage(int currentPage, int count) throws SQLException;
+
+    /**
+     * 根据id查询用户
+     * @param  id
+     * @return
+     * @throws SQLException
+     */
+    UserVo getUser(long id) throws SQLException;
+
+
+    /**
+     * 模糊搜索用户
+     * @param keywords
+     * @return
+     * @throws SQLException
+     */
+    List<User> selectByKeywords(String keywords) throws SQLException;
+
 }

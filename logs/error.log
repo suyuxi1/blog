@@ -1,4 +1,4 @@
-2019-11-23.17:11:49 ERROR [main] com.scs.web.blog.dao.ArticleDao.findAll:46  查询数据库数据异常
-2019-11-23.17:13:25 ERROR [main] com.scs.web.blog.dao.ArticleDao.findAll:46  查询数据库数据异常
-2019-11-23.17:14:40 ERROR [main] com.scs.web.blog.dao.ArticleDao.findAll:46  查询数据库数据异常
-2019-11-23.17:22:52 ERROR [main] com.scs.web.blog.dao.ArticleDao.findAll:45  查询数据库数据异常
+2019-11-25.20:00:07 ERROR [main] com.scs.web.blog.service.impl.UserServiceImpl.getHotUsers:89  获取热门用户出现异常
+2019-11-25.20:00:49 ERROR [main] com.scs.web.blog.service.impl.UserServiceImpl.getHotUsers:89  获取热门用户出现异常
+2019-11-25.20:01:31 ERROR [main] com.scs.web.blog.dao.impl.UserDaoImpl.convertUser:179  查询用户数据产生异常
+2019-11-25.20:02:30 ERROR [main] com.scs.web.blog.dao.impl.UserDaoImpl.convertUser:179  查询用户数据产生异常

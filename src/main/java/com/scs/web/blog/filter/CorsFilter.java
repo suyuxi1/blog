@@ -15,8 +15,9 @@ import java.io.IOException;
  * @Date 2019/11/9
  * @Version 1.0
  **/
+
 @WebFilter(urlPatterns = "/*")
-public class CorsFilter implements Filter  {
+public class CorsFilter implements Filter {
     private static Logger logger = LoggerFactory.getLogger(CorsFilter.class);
 
     @Override
@@ -25,7 +26,10 @@ public class CorsFilter implements Filter  {
         response.setHeader("Access-Control-Allow-Origin", "*");
         response.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT, OPTIONS, DELETE");
         response.setHeader("Access-Control-Max-Age", "3600");
-        response.setHeader("Access-Control-Allow-Headers", "x-requested-with, Content-Type");
+        //允许客户端请求头携带
+        response.setHeader("Access-Control-Allow-Headers", "x-requested-with, Content-Type,Access-Token,UId");
+        //允许给客户端响应头携带
+        response.setHeader("Access-Control-Expose-Headers", "Access-Token");
         response.setHeader("Access-Control-Allow-Credentials", "true");
         chain.doFilter(req, res);
     }
@@ -40,4 +44,29 @@ public class CorsFilter implements Filter  {
     public void destroy() {
         logger.info("跨域过滤器销毁");
     }
+
 }
+//@WebFilter(urlPatterns = "/*")
+//public class CorsFilter implements Filter  {
+//    private static Logger logger = LoggerFactory.getLogger(CorsFilter.class);
+//
+//    @Override
+//    public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException {
+//        HttpServletResponse response = (HttpServletResponse) res;
+//        response.setHeader("Access-Control-Allow-Origin", "*");
+//        response.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT, OPTIONS, DELETE");
+//        response.setHeader("Access-Control-Max-Age", "3600");
+//        response.setHeader("Access-Control-Allow-Headers", "x-requested-with, Content-Type");
+//        response.setHeader("Access-Control-Allow-Credentials", "true");
+//        chain.doFilter(req, res);
+//    }
+//    @Override
+//    public void init(FilterConfig filterConfig) {
+//        logger.info("跨域过滤器初始化");
+//    }
+//
+//    @Override
+//    public void destroy() {
+//        logger.info("跨域过滤器销毁");
+//    }
+//}

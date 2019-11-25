@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
  **/
 @Data
 public class User {
-    private Long id;
+    private Long userId;
     private String mobile;
     private String password;
     private String nickname;
@@ -23,10 +23,12 @@ public class User {
     private LocalDate birthday;
     private String address;
     private String introduction;
+    private String banner;
+    private String email;
     private String homepage;
-    private Short follows;
-    private Short fans;
-    private Short articles;
+    private Integer follows;
+    private Integer fans;
+    private Integer articles;
     private LocalDateTime createTime;
     private Short status;
 }

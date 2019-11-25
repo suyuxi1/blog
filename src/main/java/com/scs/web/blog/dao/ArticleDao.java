@@ -20,7 +20,7 @@ public interface ArticleDao {
      * @return List
      * @throws SQLException
      */
-    List<Article> findAll() throws SQLException;
+    List<ArticleVo> findAll() throws SQLException;
 
 
     /**
@@ -60,6 +60,14 @@ public interface ArticleDao {
      */
     List<ArticleVo> selectByTopicId(long topicId) throws SQLException;
 
+    /**
+     * 根据作者id查询所有文章
+     *
+     * @param userId
+     * @return
+     * @throws SQLException
+     */
+    List<ArticleVo> selectByUserId(long userId) throws SQLException;
     /**
      * 根据id获取文章详情
      *

@@ -16,7 +16,7 @@ import java.io.IOException;
  * @Version 1.0
  **/
 public class ImageUtil {
-    public static BufferedImage getImage(String content, int width, int height){
+    public static BufferedImage getImage( int width, int height,String content){
         BufferedImage img = new BufferedImage(width, height,BufferedImage.TYPE_3BYTE_BGR);
         Graphics2D g = (Graphics2D) img.getGraphics();
         Color foreColor = new Color(26,160,52);
@@ -34,7 +34,7 @@ public class ImageUtil {
 
     public static void main(String[] args) throws IOException {
         String code = DataUtil.getNumberCode();
-        BufferedImage img = ImageUtil.getImage(code,200, 100);
+        BufferedImage img = ImageUtil.getImage(200, 100,code);
         File file = new File("E:/2019/T.jpg");
         ImageIO.write(img, "jpg", file);
     }

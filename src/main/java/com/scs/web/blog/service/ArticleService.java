@@ -34,4 +34,6 @@ public interface ArticleService {
      * @return
      */
     Result selectByKeywords(String keywords);
+
+    Result getArticlesByPage(int page, int count);
 }

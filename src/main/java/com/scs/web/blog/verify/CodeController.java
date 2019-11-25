@@ -1,7 +1,5 @@
 package com.scs.web.blog.verify;
 
-
-
 import javax.imageio.ImageIO;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -25,7 +23,7 @@ public class CodeController extends HttpServlet {
         //1.生成验证码
         String code = StringUtil.getRandomString();
         //2.生成图片
-        BufferedImage img = ImageUtil.getImage(code, 200, 100);
+        BufferedImage img = ImageUtil.getImage( 200, 100,code);
         //3.设置resp的响应内容类型
         resp.setContentType("image/jpg");
         //4.将图片通过输出流返回给客户端

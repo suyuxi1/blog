@@ -72,4 +72,19 @@ public class ArticleServiceImpl implements ArticleService {
             return Result.failure(ResultCode.RESULT_CODE_DATA_NONE);
         }
     }
+
+    @Override
+    public Result getArticlesByPage(int currentPage, int count) {
+        List<ArticleVo> articleVoList = null;
+        try {
+            articleVoList = articleDao.selectByPage(currentPage, count);
+        } catch (SQLException e) {
+            logger.error("分页查询文章出现异常");
+        }
+        if (articleVoList != null) {
+            return Result.success(articleVoList);
+        } else {
+            return Result.failure(ResultCode.RESULT_CODE_DATA_NONE);
+        }
+    }
 }

@@ -2,6 +2,7 @@ package com.scs.web.blog.controller;
 
 import com.scs.web.blog.util.DataUtil;
 import com.scs.web.blog.verify.ImageUtil;
+import com.scs.web.blog.verify.StringUtil;
 
 import javax.imageio.ImageIO;
 import javax.servlet.ServletException;
@@ -23,32 +24,37 @@ import java.io.OutputStream;
  **/
 @WebServlet(urlPatterns = "/api/code")
 public class CodeController extends HttpServlet {
-//    @Override
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException , IOException{
-//        String code = UserDataUtil.getNumberCode();
-//        HttpSession session = req.getSession();
-//        System.out.println(session.getId());
-//        session.setAttribute("code", code);
-//        int width = 130;
-//        int height = 35;
-//        Random random = new Random();
-//        Color color = new Color(130,180,45);
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //获取随机验证码
+        String code = StringUtil.getRandomString();
+        //存入session
+        HttpSession session = req.getSession();
+        session.setAttribute("code", code);
+        resp.setHeader("Access-Token",session.getId());
+        BufferedImage img = ImageUtil.getImage(200, 100, code);
+        //设置resp的响应内容类型
+        resp.setContentType("image/jpg");
+        //将图片通过输出流返回给客户端
+        OutputStream out = resp.getOutputStream();
+        ImageIO.write(img, "jpg", out);
+        out.close();
+    }
+
+//@Override
+//protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//    String code = DataUtil.getNumberCode();
 //
-//    }
-@Override
-protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    String code = DataUtil.getNumberCode();
-
-    HttpSession session = req.getSession();
-    System.out.println(session.getId());
-    session.setAttribute("code", code);
-
-    BufferedImage image = ImageUtil.getImage(code, 200, 100);
-    //设置响应内容类型
-    resp.setContentType("image/jpg");
-    OutputStream out = resp.getOutputStream();
-    ImageIO.write(image,"jpg", out);
-    out.close();
-}
+//    HttpSession session = req.getSession();
+//    System.out.println(session.getId());
+//    session.setAttribute("code", code);
+//
+//    BufferedImage image = ImageUtil.getImage(code, 200, 100);
+//    //设置响应内容类型
+//    resp.setContentType("image/jpg");
+//    OutputStream out = resp.getOutputStream();
+//    ImageIO.write(image,"jpg", out);
+//    out.close();
+//}
 
 }

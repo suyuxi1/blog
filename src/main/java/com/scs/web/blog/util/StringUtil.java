@@ -31,20 +31,48 @@ public class StringUtil {
         return result;
     }
 
-    public static String getRandomCode() {
-        //设置字符
-        char[] chars = "1234567890QWERTYUIOPASDFGHJKLZXCVBNM".toCharArray();
-        //设置随机数
-        Random random = new Random();
-        // 获取4位随机数
+    final static int MAX = 4;
+    static char c;
+
+    public static String getRandomString() {
         StringBuilder stringBuilder = new StringBuilder();
+        Random random = new Random();
         int index;
-        for (int i = 0; i < 4; i++) {
-            //获取随机chars下标
-            index = random.nextInt(chars.length);
-            stringBuilder.append(chars[index]);
+        char c;
+        String[] choice = {"数字", "大写字母", "小写字母"};
+        for (int i = 0; i < MAX; i++) {
+            index = random.nextInt(3);
+            switch (index) {
+                case 0:
+                case 1:
+                case 2:
+                    char result = getChar(index);
+                    stringBuilder.append(result);
+                    break;
+                default:
+                    break;
+            }
         }
         return stringBuilder.toString();
+    }
+
+    public static char getChar(int item) {
+
+        int digitalBound = 10;
+        int charBound = 26;
+        Random random = new Random();
+        int index;
+        if (item == 0) {
+            index = random.nextInt(digitalBound);
+            c = (char) ('0' + index);
+        } else if (item == 1) {
+            index = random.nextInt(charBound);
+            c = (char) ('A' + index);
+        } else {
+            index = random.nextInt(charBound);
+            c = (char) ('a' + index);
+        }
+        return c;
     }
 
     public static void main(String[] args) {

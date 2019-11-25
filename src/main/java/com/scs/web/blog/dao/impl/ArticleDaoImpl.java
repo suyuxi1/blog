@@ -3,6 +3,8 @@ package com.scs.web.blog.dao.impl;
 import com.scs.web.blog.dao.ArticleDao;
 import com.scs.web.blog.domain.vo.ArticleVo;
 import com.scs.web.blog.entity.Article;
+import com.scs.web.blog.entity.User;
+import com.scs.web.blog.util.BeanHandler;
 import com.scs.web.blog.util.DbUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -51,15 +53,21 @@ public class ArticleDaoImpl implements ArticleDao {
     }
 
     @Override
-    public List<Article> findAll() throws SQLException {
-        List<Article> articleList = new ArrayList<>();
+    public List<ArticleVo> findAll() throws SQLException {
+        List<ArticleVo> articleVoList = new ArrayList<>();
         Connection connection = DbUtil.getConnection();
         connection.setAutoCommit(false);
-        String sql = "SELECT * FROM t_article" ;
+        String sql = "SELECT a.*, b.nickname, b.avatar, b.`user_id`\n" +
+                "FROM t_article a\n" +
+                "LEFT JOIN t_user b\n" +
+                "ON a.`user_id` = b.`user_id`\n" +
+                "WHERE a.`user_id` = b.`user_id`" ;
         Statement stmt = connection.createStatement();
         ResultSet rs = stmt.executeQuery(sql);
         while(rs.next()){
             Article article = new Article();
+            ArticleVo articleVo = new ArticleVo();
+            User user = new User();
             article.setId(rs.getLong("id"));
             article.setUserId(rs.getLong("user_id"));
             article.setTopicId(rs.getLong("topic_id"));
@@ -70,12 +78,17 @@ public class ArticleDaoImpl implements ArticleDao {
             article.setLikes(rs.getInt("likes"));
             article.setComments(rs.getInt("comments"));
             article.setCreateTime(rs.getTimestamp("create_Time").toLocalDateTime());
-            articleList.add(article);
+            user.setUserId(rs.getLong("user_id"));
+            user.setNickname(rs.getString("nickname"));
+            user.setAvatar(rs.getString("avatar"));
+            articleVo.setArticle(article);
+            articleVo.setAuthor(user);
+            articleVoList.add(articleVo);
         }
         connection.commit();
 //        stmt.close();
 //        connection.close();
-        return articleList;
+        return articleVoList;
     }
 
 
@@ -95,14 +108,27 @@ public class ArticleDaoImpl implements ArticleDao {
         PreparedStatement pst = connection.prepareStatement(sql);
         ResultSet rs = pst.executeQuery();
         //调用封装的方法，将结果集解析成List
-        List<ArticleVo> articleVoList = convert(rs);
+        List<ArticleVo> articleVoList = BeanHandler.convertArticle(rs);
 //        DbUtil.close(connection, pst, rs);
         return articleVoList;
     }
 
     @Override
     public List<ArticleVo> selectByPage(int currentPage, int pageCount) throws SQLException {
-        return null;
+        Connection connection = DbUtil.getConnection();
+        String sql = "SELECT a.*,b.topic_name,b.logo,c.nickname,c.avatar " +
+                "FROM t_article a " +
+                "LEFT JOIN t_topic b " +
+                "ON a.topic_id = b.id " +
+                "LEFT JOIN t_user c " +
+                "ON a.user_id = c.id  LIMIT ?,? ";
+        PreparedStatement pst = connection.prepareStatement(sql);
+        pst.setInt(1, (currentPage - 1) * pageCount);
+        pst.setInt(2, pageCount);
+        ResultSet rs = pst.executeQuery();
+        List<ArticleVo> articleVos = BeanHandler.convertArticle(rs);
+//        DbUtil.close(connection, pst, rs);
+        return articleVos;
     }
 
 
@@ -116,11 +142,12 @@ public class ArticleDaoImpl implements ArticleDao {
                 "ON a.topic_id = b.id " +
                 "LEFT JOIN t_user c " +
                 "ON a.user_id = c.id " +
-                "WHERE a.title LIKE ? ";
+                "WHERE a.title LIKE ?  OR a.summary LIKE ? ";
         PreparedStatement pst = connection.prepareStatement(sql);
         pst.setString(1, "%" + keywords + "%");
+        pst.setString(2, "%" + keywords + "%");
         ResultSet rs = pst.executeQuery();
-        List<ArticleVo> articleVos = convert(rs);
+        List<ArticleVo> articleVos = BeanHandler.convertArticle(rs);
 //        DbUtil.close(connection, pst, rs);
         return articleVos;
     }
@@ -139,7 +166,26 @@ public class ArticleDaoImpl implements ArticleDao {
         PreparedStatement pst = connection.prepareStatement(sql);
         pst.setLong(1, topicId);
         ResultSet rs = pst.executeQuery();
-        List<ArticleVo> articleVos = convert(rs);
+        List<ArticleVo> articleVos = BeanHandler.convertArticle(rs);
+//        DbUtil.close(connection, pst, rs);
+        return articleVos;
+    }
+
+    @Override
+    public List<ArticleVo> selectByUserId(long userId) throws SQLException {
+        Connection connection = DbUtil.getConnection();
+        //从文章、专题、用户表联查出前端需要展示的数据
+        String sql = "SELECT a.*,b.topic_name,b.logo,c.nickname,c.avatar " +
+                "FROM t_article a " +
+                "LEFT JOIN t_topic b " +
+                "ON a.topic_id = b.id " +
+                "LEFT JOIN t_user c " +
+                "ON a.user_id = c.id " +
+                "WHERE a.topic_id = ? ";
+        PreparedStatement pst = connection.prepareStatement(sql);
+        pst.setLong(1, userId);
+        ResultSet rs = pst.executeQuery();
+        List<ArticleVo> articleVos = BeanHandler.convertArticle(rs);
 //        DbUtil.close(connection, pst, rs);
         return articleVos;
     }
@@ -157,38 +203,40 @@ public class ArticleDaoImpl implements ArticleDao {
         PreparedStatement pst = connection.prepareStatement(sql);
         pst.setLong(1, id);
         ResultSet rs = pst.executeQuery();
-        ArticleVo articleVo = convert(rs).get(0);
+        ArticleVo articleVo = BeanHandler.convertArticle(rs).get(0);
+        //注意这里，上一步执行完毕后，结果集的指针已经在当前这行记录的下方，所以回退一下
         rs.previous();
-        articleVo.setContent(rs.getString("content"));
+        //列表页的文章数据一般不需要详细内容，但是文章详情页需要，所以补上content属性
+        articleVo.getArticle().setContent(rs.getString("content"));
 //        DbUtil.close(connection, pst, rs);
         return articleVo;
     }
 
-    private List<ArticleVo> convert(ResultSet rs) {
-        List<ArticleVo> articleVoList = new ArrayList<>();
-        try {
-            while (rs.next()) {
-                ArticleVo articleVo = new ArticleVo();
-                articleVo.setId(rs.getLong("id"));
-                articleVo.setUserId(rs.getLong("user_id"));
-                articleVo.setTopicId(rs.getLong("topic_id"));
-                articleVo.setTitle(rs.getString("title"));
-                articleVo.setThumbnail(rs.getString("thumbnail"));
-                articleVo.setSummary(rs.getString("summary"));
-                articleVo.setLikes(rs.getInt("likes"));
-                articleVo.setComments(rs.getInt("comments"));
-                articleVo.setCreateTime(rs.getTimestamp("create_time").toLocalDateTime());
-                articleVo.setNickname(rs.getString("nickname"));
-                articleVo.setAvatar(rs.getString("avatar"));
-                articleVo.setTopicName(rs.getString("topic_name"));
-                articleVo.setLogo(rs.getString("logo"));
-                articleVoList.add(articleVo);
-            }
-        } catch (SQLException e) {
-            logger.error("文章数据结果集解析异常");
-        }
-        return articleVoList;
-    }
+//    private List<ArticleVo> convert(ResultSet rs) {
+//        List<ArticleVo> articleVoList = new ArrayList<>();
+//        try {
+//            while (rs.next()) {
+//                ArticleVo articleVo = new ArticleVo();
+//                articleVo.setId(rs.getLong("id"));
+//                articleVo.setUserId(rs.getLong("user_id"));
+//                articleVo.setTopicId(rs.getLong("topic_id"));
+//                articleVo.setTitle(rs.getString("title"));
+//                articleVo.setThumbnail(rs.getString("thumbnail"));
+//                articleVo.setSummary(rs.getString("summary"));
+//                articleVo.setLikes(rs.getInt("likes"));
+//                articleVo.setComments(rs.getInt("comments"));
+//                articleVo.setCreateTime(rs.getTimestamp("create_time").toLocalDateTime());
+//                articleVo.setNickname(rs.getString("nickname"));
+//                articleVo.setAvatar(rs.getString("avatar"));
+//                articleVo.setTopicName(rs.getString("topic_name"));
+//                articleVo.setLogo(rs.getString("logo"));
+//                articleVoList.add(articleVo);
+//            }
+//        } catch (SQLException e) {
+//            logger.error("文章数据结果集解析异常");
+//        }
+//        return articleVoList;
+//    }
 }
 
 

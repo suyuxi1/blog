@@ -1,5 +1,6 @@
 package com.scs.web.blog.dao;
 
+import com.scs.web.blog.domain.vo.ArticleVo;
 import com.scs.web.blog.entity.Article;
 import com.scs.web.blog.factory.DaoFactory;
 import org.junit.Test;
@@ -31,14 +32,14 @@ public class ArticleDaoTest {
    @Test
     public void findAll(){
         try{
-            List<Article> articleList ;
-            articleList = articleDao.findAll();
-            if (articleList != null){
+            List<ArticleVo> articleVoList ;
+            articleVoList = articleDao.findAll();
+            if (articleVoList != null){
                 System.out.println("查找数据成功");
                 for(int i=0; i<10 ;i++){
-                    Article article = articleList.get(i);
-                    System.out.println("用户id："+article.getUserId());
-                    System.out.println("内容："+article.getContent());
+                    ArticleVo articleVo = articleVoList.get(i);
+                    System.out.println("用户id："+articleVo.getAuthor().getUserId());
+                    System.out.println("内容："+articleVo.getArticle().getContent());
                 }
             }
         }catch (SQLException e){
