@@ -27,7 +27,7 @@ public class BeanHandler {
         try {
             while (rs.next()) {
                 User user = new User();
-                user.setUserId(rs.getLong("id"));
+                user.setUserId(rs.getLong("user_id"));
                 user.setMobile(rs.getString("mobile"));
                 user.setPassword(rs.getString("password"));
                 user.setNickname(rs.getString("nickname"));
@@ -36,8 +36,8 @@ public class BeanHandler {
                 user.setBirthday(rs.getDate("birthday").toLocalDate());
                 user.setIntroduction(rs.getString("introduction"));
                 user.setHomepage(rs.getString("homepage"));
-                user.setBanner(rs.getString("banner"));
-                user.setEmail(rs.getString("email"));
+//                user.setBanner(rs.getString("banner"));
+//                user.setEmail(rs.getString("email"));
                 user.setAddress(rs.getString("address"));
                 user.setFollows(rs.getInt("follows"));
                 user.setFans(rs.getInt("fans"));
@@ -48,6 +48,7 @@ public class BeanHandler {
             }
         } catch (SQLException e) {
             logger.error("用户数据结果集解析产生异常");
+            e.printStackTrace();
         }
         return userList;
     }

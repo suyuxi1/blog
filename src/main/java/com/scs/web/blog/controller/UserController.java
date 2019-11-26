@@ -53,7 +53,7 @@ public class UserController extends HttpServlet {
         if ("/api/user".equals(uri)) {
             String page = req.getParameter("page");
             String keywords = req.getParameter("keywords");
-            String count = req.getParameter("5");
+            String count = req.getParameter("count");
             if (page != null) {
                 getUsersByPage(resp, Integer.parseInt(page), Integer.parseInt(count));
             } else if (keywords != null) {

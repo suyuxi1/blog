@@ -41,4 +41,23 @@ public class UserServiceTest {
         Result rs = ServiceFactory.getUserServiceInstance().getHotUsers();
         System.out.println("用户数据："+rs.getData());
     }
+
+    @Test
+    public void selectByPage() {
+        Result rs = ServiceFactory.getUserServiceInstance().selectByPage(8,6);
+        System.out.println("数据"+ rs.getData());
+
+    }
+
+    @Test
+    public void getUser() {
+        Result rs = ServiceFactory.getUserServiceInstance().getUser(66);
+        System.out.println("数据"+rs.getData());
+    }
+
+    @Test
+    public void selectByKeywords() {
+        Result rs = ServiceFactory.getUserServiceInstance().selectByKeywords("过");
+        System.out.println("数据"+rs.getData());
+    }
 }

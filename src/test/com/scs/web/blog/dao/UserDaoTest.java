@@ -2,6 +2,8 @@ package com.scs.web.blog.dao;
 
 
 
+import com.scs.web.blog.domain.vo.UserVo;
+import com.scs.web.blog.entity.User;
 import com.scs.web.blog.factory.DaoFactory;
 import com.scs.web.blog.util.JSoupSpider;
 import org.junit.Test;
@@ -10,6 +12,7 @@ import org.slf4j.LoggerFactory;
 
 
 import java.sql.SQLException;
+import java.util.List;
 
 
 public class UserDaoTest {
@@ -30,4 +33,28 @@ public class UserDaoTest {
     }
 
 
+    @Test
+    public void selectHotUsers() throws SQLException {
+        List list = DaoFactory.getUserDaoInstance().selectHotUsers();
+        System.out.println(list);
+    }
+
+    @Test
+    public void selectByPage() throws SQLException {
+        List list = DaoFactory.getUserDaoInstance().selectByPage(2,3);
+        System.out.println(list);
+    }
+
+    @Test
+    public void getUser() throws SQLException {
+        UserVo  userVo = DaoFactory.getUserDaoInstance().getUser(25);
+        System.out.println(userVo);
+    }
+
+
+    @Test
+    public void selectByKeywords() throws SQLException {
+        List<User> list= DaoFactory.getUserDaoInstance().selectByKeywords("老师");
+        System.out.println(list);
+    }
 }

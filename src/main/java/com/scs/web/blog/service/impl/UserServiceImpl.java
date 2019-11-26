@@ -129,6 +129,7 @@ public class UserServiceImpl implements UserService {
                 return Result.success(userVo);
             } catch (SQLException e) {
                 logger.error("根据用户id获取文章列表数据出现异常");
+                e.printStackTrace();
             }
         }
 

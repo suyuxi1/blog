@@ -180,7 +180,7 @@ public class ArticleDaoImpl implements ArticleDao {
                 "LEFT JOIN t_topic b " +
                 "ON a.topic_id = b.id " +
                 "LEFT JOIN t_user c " +
-                "ON a.user_id = c.id " +
+                "ON a.user_id = c.user_id " +
                 "WHERE a.topic_id = ? ";
         PreparedStatement pst = connection.prepareStatement(sql);
         pst.setLong(1, userId);
